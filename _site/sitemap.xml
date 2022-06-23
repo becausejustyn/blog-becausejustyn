@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://becausejustyn.netlify.app/posts/first-post/index.html</loc>
+    <lastmod>2022-06-23T04:58:27.654Z</lastmod>
+  </url>
+  <url>
+    <loc>https://becausejustyn.netlify.app/posts/post-with-code/index.html</loc>
+    <lastmod>2022-06-23T05:00:42.218Z</lastmod>
+  </url>
+  <url>
+    <loc>https://becausejustyn.netlify.app/posts/welcome/index.html</loc>
+    <lastmod>2022-06-23T04:25:06.538Z</lastmod>
+  </url>
+  <url>
+    <loc>https://becausejustyn.netlify.app/about.html</loc>
+    <lastmod>2022-06-23T04:25:07.268Z</lastmod>
+  </url>
+  <url>
+    <loc>https://becausejustyn.netlify.app/index.html</loc>
+    <lastmod>2022-06-23T05:00:42.965Z</lastmod>
+  </url>
+  <url>
+    <loc>https://becausejustyn.netlify.app/posts/virtual-environments/index.html</loc>
+    <lastmod>2022-06-23T05:00:12.704Z</lastmod>
+  </url>
+</urlset>

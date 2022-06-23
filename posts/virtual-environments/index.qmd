@@ -1,0 +1,81 @@
+---
+title: "Virtual Environments"
+date: "2022-06-22"
+categories: [general]
+format: 
+  html:
+    highlight: true
+    code-fold: show
+    code-tools: true
+    highlight-style: github
+#image: "image.jpg"
+---
+
+Virtual environments are something that took me a while to appreciate. I started out with `R`, where it is not really an issue, however, when I swapped over to `Python`, I read about the importance, yet I ignored that advice because I did not fully understand it. The idea of creating a new environment for every project seemed over the top considering how often I might open R or Python just for something quick. 
+
+::: {.column-margin}
+My supervisor suggests that I use [Google Collab](https://colab.research.google.com/) for any code that takes more than 3 minutes to run.
+:::
+
+Once I started using Python more and required libraries beyond `Numpy` and `Pandas`, I began to see the challenge of dealing with multiple conflicts. Additionally, there was the challenge of not being able to do something because one library required a particular version of Python. 
+
+### venv
+
+Setting up a venv is quite simple. For mac, you simply would type the following into your terminal
+
+```{bash}
+#| eval: false
+python3 -m venv env
+```
+
+Which would create a new enviornment called `venv`. Something worth noting is that loading the kernel will be much quick when you create a venv in your project.
+
+::: {.column-margin}
+One of the nice things about Quarto is that it forces you to become more comfortable with command line. If you do not want to learn command line terminology, you can use RStudio, which has user friendly options, however, I think in the long run being more comfortable with some of the terms will help you out.
+:::
+
+To activate the environment, you simply would type
+
+```{bash}
+#| eval: false
+source env/bin/activate
+```
+
+Installing packages for your venv is quite simple. 
+
+```{bash}
+#| eval: false
+python3 -m pip install numpy jupyter matplotlib pandas plotly
+```
+
+Say you want your environment to be reproducible, you will want to create a requirements document so someone can run `requirements.txt` and install the libraries from there.
+
+```{bash}
+#| eval: false
+python3 -m pip freeze > requirements.txt
+```
+
+Which is quite simple for any user on a different machine. All you would have to do is
+
+```{bash}
+#| eval: false
+python3 -m pip install -r requirements.txt
+```
+
+### renv
+
+[renv](https://rstudio.github.io/renv/articles/renv.html) is the `R` version of venv. Given the major changes between key versions, it is a good practice to use renv when working on something that other users might also work on.
+
+```{r}
+#| eval: false
+install.packages("renv", repos='http://cran.us.r-project.org')
+renv::init()
+```
+
+From my understanding, if you do this, you will not need to set up a venv like above. I use Visual Code for this project, which automatically loads the enviornment in your local folder so that makes it easier.
+
+```{r}
+#| eval: false
+renv::use_python()
+```
+

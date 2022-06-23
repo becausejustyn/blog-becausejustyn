@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "posts/first-post/index.html",
+    "href": "posts/first-post/index.html",
+    "title": "First Post",
+    "section": "",
+    "text": "Instead of porting my blog, I decided that I would start from scratch so I could keep the posts that I wanted, and fix the ones that I would keep. I have learned a lot since the start of my original blog, and I thought it might be best to make note of that. Instead of removing less efficient approaches that my old posts might have, this will be a good chance to take advantage of the features that Quarto provide. I’ll give an example in my next post.\nGiven how much easier it will be to post, my goal will be to have a new blog post at least once a month. From this post it will not be too much of a challenge since I have a lot of drafts saved, however, my goal is for sustainability in the future.\n\n\n\n\n\n\nExpand To Learn About Collapse\n\n\n\n\n\nThis is an example of a ‘folded’ caution callout that can be expanded by the user. You can use collapse=\"true\" to collapse it by default or collapse=\"false\" to make a collapsible callout that is expanded by default."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "blog-becausejustyn",
+    "section": "",
+    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJun 24, 2022\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJun 23, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nJun 22, 2022\n\n\n\n\n\n\n  \n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nJun 20, 2022\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/virtual-environments/index.html",
+    "href": "posts/virtual-environments/index.html",
+    "title": "Virtual Environments",
+    "section": "",
+    "text": "My supervisor suggests that I use Google Collab for any code that takes more than 3 minutes to run.\nOnce I started using Python more and required libraries beyond Numpy and Pandas, I began to see the challenge of dealing with multiple conflicts. Additionally, there was the challenge of not being able to do something because one library required a particular version of Python.\n\nvenv\nSetting up a venv is quite simple. For mac, you simply would type the following into your terminal\n\n\nCode\npython3 -m venv env\n\n\nWhich would create a new enviornment called venv. Something worth noting is that loading the kernel will be much quick when you create a venv in your project.\n\n\nOne of the nice things about Quarto is that it forces you to become more comfortable with command line. If you do not want to learn command line terminology, you can use RStudio, which has user friendly options, however, I think in the long run being more comfortable with some of the terms will help you out.\nTo activate the environment, you simply would type\n\n\nCode\nsource env/bin/activate\n\n\nInstalling packages for your venv is quite simple.\n\n\nCode\npython3 -m pip install numpy jupyter matplotlib pandas plotly\n\n\nSay you want your environment to be reproducible, you will want to create a requirements document so someone can run requirements.txt and install the libraries from there.\n\n\nCode\npython3 -m pip freeze > requirements.txt\n\n\nWhich is quite simple for any user on a different machine. All you would have to do is\n\n\nCode\npython3 -m pip install -r requirements.txt\n\n\n\n\nrenv\nrenv is the R version of venv. Given the major changes between key versions, it is a good practice to use renv when working on something that other users might also work on.\n\n\nCode\ninstall.packages(\"renv\", repos='http://cran.us.r-project.org')\nrenv::init()\n\n\nFrom my understanding, if you do this, you will not need to set up a venv like above. I use Visual Code for this project, which automatically loads the enviornment in your local folder so that makes it easier.\n\n\nCode\nrenv::use_python()"
+  }
+]
