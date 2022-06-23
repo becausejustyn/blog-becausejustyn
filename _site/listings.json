@@ -3,9 +3,10 @@
     "listing": "/index.html",
     "items": [
       "/posts/post-with-code/index.html",
-      "/posts/first-post/index.html",
       "/posts/virtual-environments/index.html",
-      "/posts/welcome/index.html"
+      "/posts/colouring-text-ggplot/index.html",
+      "/posts/welcome/index.html",
+      "/posts/first-post/index.html"
     ]
   }
 ]

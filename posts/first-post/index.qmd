@@ -1,6 +1,6 @@
 ---
 title: "First Post"
-date: "2022-06-23"
+date: "2022-06-20"
 categories: [general]
 format: 
   html:
