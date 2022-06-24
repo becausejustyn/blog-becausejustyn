@@ -20,6 +20,7 @@ website:
     right:
       - about.qmd
       - text: Posts
+        href: https://becausejustyn.netlify.app/
       - icon: github
         href: https://github.com/becausejustyn
       - icon: twitter

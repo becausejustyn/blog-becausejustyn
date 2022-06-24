@@ -1,0 +1,245 @@
+---
+title: "Gambling"
+date: "2022-06-24"
+categories: [probability, sport]
+format:
+  html:
+    highlight: true
+    code-fold: show
+    code-tools: true
+    highlight-style: github
+---
+
+As a sports fan I have always enjoyed looking at win probability. I was amazed the day that I discovered head to head odds and a spread can be roughly converted to a teams expected win probability. There are three main types of odds used in sport:
+
+`Decimal Odds:` 3.5 or 3.5:1  
+`Fractional Odds:` 7/2  
+`Moneyline Odds:` +350  
+
+I find moneyline odds not very intuitive, so I am constantly having to search for ways to convert them. The logic for them is
+
+> For every $100 you bet, how much money will you make.
+
+I have never liked this explaination because not only does it create an expectation on how much money one should bet, it also is not intuitive since you need to remove the initial money invested in the return since that was not money won.
+
+::: {.column-margin}
+This is not gambling advice, I just enjoy looking at the numbers of it.
+:::
+
+I used to gamble causally before (my biggest bet was \$5), however, as I began to understand the odds and expected return better, I began to gamble less and less often. I am going to display how to convert these odds from one type to another now.
+
+### Decimal Odds to Percentage
+
+$$\frac{1}{\text{decimal odds}}$$
+
+For example:
+
+::: {.column-margin}
+Note: For the rest of this post I am rounding all values to 3 decimal values.
+:::
+
+$$\text{Implied Probability} = \frac{1}{3.5} = 0.286$$
+
+### Fractional Odds to Percentage
+
+For every denominator n units you bet, you get numerator n units for a win. In the above example, you would get 7 units back if you bet 2 units and won.
+
+::: {.column-page-inset}
+$$\frac{\text{Denominator}}{\text{Denominator + Numerator}} = \text{Implied probability =}\frac{2}{(7 + 2)} = \frac{2}{9} = 0.222$$
+:::
+
+### Moneyline
+
+-   `-120` means you need to bet `$120` to make a profit of `$100` (total of `$220`)
+-   `+120` means you need to bet `$100` to make a profit of `$120` (total of `$220`)
+
+For negative moneyline odds (that generally means the favourite):
+
+$$- \text{Moneyline Odds} + 100$$
+
+For example, -120
+
+#### Example of a Moneyline Odds of -120.
+
+$$\text{Implied Probability} = \frac{- (-120)}{- (-120) + 100}  = \frac{120}{(120 + 100)}
+= \frac{120}{220} = 0.545 = 54.5\%$$
+
+#### Example of a Moneyline Odds of +120.
+
+For a positive moneyline odds, e.g. +120, we do
+
+$$\frac{100}{\text{Moneyline Odds} + 100} = \frac{100}{120 + 100} = \frac{100}{220} = 0.455 = 45.5\%$$
+
+### Implied Odds
+
+#### Implied Probability to Decimal Odds.
+
+For example, an implied probability of 75%
+
+$$\frac{100}{\text{Implied Probability}} =\frac{100}{75} = 1.33$$
+
+#### Implied Probability to Fractional Odds
+
+For example, an implied probability of 25%
+
+$$\left(\frac{100}{\text{Implied Probability}}  \right) - 1 = \underbrace{\left( \frac{100}{25} \right) - 1 = 4 - 1 = 3}_{\text{Expressed as 3 to 1}}$$
+
+### Implied Probability to Moneyline Odds
+
+This depends on whether the implied probability is above 50% or below. In other words, the favourite or underdog. For sports where a draw is not common, calculating one will allow you to calculate the other by subtracting it from $1$. It gets a little bit more complicated for sports such as soccer or ice hockey where a draw is much more frequent.
+
+For the favourite, it is simply:
+
+$$\left( \frac{\text{Implied Probability}}{100 - \text{Implied Probability}} \right) \times 100$$
+
+For example, the implied probability of 75%
+
+$$- \frac{Probability}{(100 – Probability) \times 100} = - \left( \frac{75}{100-75} \right) \times 100 = - \left( \frac{75}{25} \right) \times 100 = 3 \times 100 = -300$$
+
+For the underdog (probability below 50%), we simply adjust the calculation by
+
+$$\left( \frac{100 - \text{Implied Probability}}{\text{Implied Probability}} \right) \times 100$$
+
+For example, the implied probability of 25%
+
+$$\frac{(100 – Probability)}{(Probability)} \times 100 = \left( \frac{75}{25} \times 100 \right) = 3 \times 100 = + 300$$
+
+## Calculating these via R or Python
+
+`glue()` in R is the same as using f strings in Python, however, I wanted to display it in base R since I did not import anything for Python. 
+
+::: {.column-margin}
+If I were to use `glue()`, it would be done via `glue::glue("Favourite odds: {fav_prob}\n Underdog odds:{underdog_prob}")`
+:::
+
+
+::: {.panel-tabset}
+
+### R
+
+```{r}
+money_line <- function(fav, underdog, ndigits = 3) {
+  
+  fav_odds = (fav * -1)
+  prob1 = fav_odds / (fav_odds + underdog)
+  prob2 = underdog / (fav_odds + underdog)
+  fav_prob = prob1 |> round(ndigits)
+  underdog_prob = prob2 |> round(ndigits)
+  
+  cat("Favourite odds", fav_prob, "\nUnderdog odds: ", underdog_prob)
+}
+```
+
+```{r}
+money_line(-130, 110)
+```
+
+### Python
+
+```{python}
+def money_line(fav, underdog, ndigits = 3):
+    fav_odds = (fav * -1)
+    prob1 = fav_odds / (fav_odds + underdog)
+    prob2 = underdog / (fav_odds + underdog)
+    fav_prob = round(prob1, ndigits)
+    underdog_prob = round(prob2, ndigits)
+
+    print(f"\nFavourite odds: {fav_prob} \nUnderdog odds:{underdog_prob}")
+```
+
+```{python}
+money_line(-130, 110)
+```
+:::
+
+
+The problem with the above function is that it requires the input values to be in a specific order. If you want a more general approach that does not specify the order of the two values, you could do something like this.
+
+::: {.panel-tabset}
+
+### R
+
+```{r}
+money_line2 <- function(arg1, arg2, ndigits = 3) {
+  
+  fav = sort(c(arg1, arg2))[1]
+  underdog = sort(c(arg1, arg2))[2]    
+  fav_val = fav * -1
+  fav_prob = fav_val / (fav_val + underdog)
+  return(fav_prob |> round(ndigits))
+}
+```
+
+```{r}
+print(money_line2(-425, 351))
+print(money_line2(351, -425))
+```
+
+### Python
+
+```{python}
+def money_line2(arg1, arg2, ndigits = 3):
+
+    fav = sorted([arg1, arg2])[0]
+    underdog = sorted([arg1, arg2])[1]
+    # underdog will be negative, so this makes it positive
+    fav_val = fav * -1
+    fav_prob = fav_val / (fav_val + underdog)
+    return round(fav_prob, ndigits)
+```
+
+```{python}
+print(money_line2(-425, 351))
+print(money_line2(351, -425))
+```
+:::
+
+It is worth noting that the above functions can be done in less lines, but I like defining variables on their own line to make the code a bit more readable. For example, say I wanted to create the sigmoid function
+
+::: {.column-margin}
+I imported `math` for Python for the log function. 
+:::
+
+::: {.panel-tabset}
+
+### R
+
+```{r}
+#| eval: false
+logit <- function(p) { 
+  out <- p / (1 - p) |> log()
+  return(out)
+}
+
+logit <- function(p) { 
+  return(log(p/(1 - p)))
+}
+
+(function (p) p/(1 - p) |>log()) (x)
+```
+
+### Python
+
+```{python}
+#| eval: false
+import math
+
+def logit(p):
+    out = math.log(p / (1 - p))
+    return(out)
+
+def logit(p):
+    return(math.log(p / (1 - p)))
+
+x = lambda p: math.log(p / (1 - p))
+```
+
+:::
+
+Both functions in R or Python would return the same output. While readability may not seem that important for a simple function
+
+::: {.column-margin}
+The anonymous function versions for both would be:
+R: `(function (p) p/(1 - p) |>log()) (x)`
+Python: `x = lambda p: math.log(p / (1 - p))`
+:::
