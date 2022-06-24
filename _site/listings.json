@@ -2,12 +2,15 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/tidy-pandas/Untitled.html",
       "/posts/post-with-code/index.html",
       "/posts/gambling/index.html",
       "/posts/virtual-environments/index.html",
       "/posts/colouring-text-ggplot/index.html",
       "/posts/welcome/index.html",
-      "/posts/first-post/index.html"
+      "/posts/first-post/index.html",
+      "/posts/tidy-pandas/index.html",
+      "/posts/r-test/index.html"
     ]
   }
 ]
