@@ -118,6 +118,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<script src="../../site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<script src="../../site_libs/plotly-binding-4.10.0/plotly.js"></script>
+<script src="../../site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="../../site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="../../site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet">
+<script src="../../site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
+<link href="../../site_libs/plotly-htmlwidgets-css-2.5.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="../../site_libs/plotly-main-2.5.1/plotly-latest.min.js"></script>
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -194,7 +202,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#update" id="toc-update" class="nav-link active" data-scroll-target="#update">Update</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
@@ -353,12 +367,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </details>
 <div class="cell-output-display column-screen">
 
-<div id="ywntxuwafq" style="overflow-x:auto;overflow-y:auto;width:auto;height:300px;">
+<div id="fqiyoldoxp" style="overflow-x:auto;overflow-y:auto;width:auto;height:300px;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ywntxuwafq .gt_table {
+#fqiyoldoxp .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -383,7 +397,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-left-color: #D3D3D3;
 }
 
-#ywntxuwafq .gt_heading {
+#fqiyoldoxp .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -395,7 +409,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-#ywntxuwafq .gt_title {
+#fqiyoldoxp .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -405,7 +419,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-bottom-width: 0;
 }
 
-#ywntxuwafq .gt_subtitle {
+#fqiyoldoxp .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -415,13 +429,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-top-width: 0;
 }
 
-#ywntxuwafq .gt_bottom_border {
+#fqiyoldoxp .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ywntxuwafq .gt_col_headings {
+#fqiyoldoxp .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -436,7 +450,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-#ywntxuwafq .gt_col_heading {
+#fqiyoldoxp .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -456,7 +470,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   overflow-x: hidden;
 }
 
-#ywntxuwafq .gt_column_spanner_outer {
+#fqiyoldoxp .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -468,15 +482,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 4px;
 }
 
-#ywntxuwafq .gt_column_spanner_outer:first-child {
+#fqiyoldoxp .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ywntxuwafq .gt_column_spanner_outer:last-child {
+#fqiyoldoxp .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ywntxuwafq .gt_column_spanner {
+#fqiyoldoxp .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -488,7 +502,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   width: 100%;
 }
 
-#ywntxuwafq .gt_group_heading {
+#fqiyoldoxp .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -510,7 +524,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   vertical-align: middle;
 }
 
-#ywntxuwafq .gt_empty_group_heading {
+#fqiyoldoxp .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -525,15 +539,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   vertical-align: middle;
 }
 
-#ywntxuwafq .gt_from_md > :first-child {
+#fqiyoldoxp .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ywntxuwafq .gt_from_md > :last-child {
+#fqiyoldoxp .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ywntxuwafq .gt_row {
+#fqiyoldoxp .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -552,7 +566,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   overflow-x: hidden;
 }
 
-#ywntxuwafq .gt_stub {
+#fqiyoldoxp .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -564,7 +578,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-left: 12px;
 }
 
-#ywntxuwafq .gt_summary_row {
+#fqiyoldoxp .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -574,7 +588,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-#ywntxuwafq .gt_first_summary_row {
+#fqiyoldoxp .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -584,7 +598,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-top-color: #D3D3D3;
 }
 
-#ywntxuwafq .gt_grand_summary_row {
+#fqiyoldoxp .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -594,7 +608,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   padding-right: 5px;
 }
 
-#ywntxuwafq .gt_first_grand_summary_row {
+#fqiyoldoxp .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -604,11 +618,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-top-color: #D3D3D3;
 }
 
-#ywntxuwafq .gt_striped {
+#fqiyoldoxp .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ywntxuwafq .gt_table_body {
+#fqiyoldoxp .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -617,7 +631,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-bottom-color: #D3D3D3;
 }
 
-#ywntxuwafq .gt_footnotes {
+#fqiyoldoxp .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -631,13 +645,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-#ywntxuwafq .gt_footnote {
+#fqiyoldoxp .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#ywntxuwafq .gt_sourcenotes {
+#fqiyoldoxp .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -651,41 +665,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   border-right-color: #D3D3D3;
 }
 
-#ywntxuwafq .gt_sourcenote {
+#fqiyoldoxp .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#ywntxuwafq .gt_left {
+#fqiyoldoxp .gt_left {
   text-align: left;
 }
 
-#ywntxuwafq .gt_center {
+#fqiyoldoxp .gt_center {
   text-align: center;
 }
 
-#ywntxuwafq .gt_right {
+#fqiyoldoxp .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ywntxuwafq .gt_font_normal {
+#fqiyoldoxp .gt_font_normal {
   font-weight: normal;
 }
 
-#ywntxuwafq .gt_font_bold {
+#fqiyoldoxp .gt_font_bold {
   font-weight: bold;
 }
 
-#ywntxuwafq .gt_font_italic {
+#fqiyoldoxp .gt_font_italic {
   font-style: italic;
 }
 
-#ywntxuwafq .gt_super {
+#fqiyoldoxp .gt_super {
   font-size: 65%;
 }
 
-#ywntxuwafq .gt_footnote_marks {
+#fqiyoldoxp .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -2489,12 +2503,12 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
 </details>
 <div class="cell-output-display column-page">
 
-<div id="wqflhunxzn" style="overflow-x:auto;overflow-y:auto;width:auto;height:500px;">
+<div id="irtwqfhmfg" style="overflow-x:auto;overflow-y:auto;width:auto;height:500px;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#wqflhunxzn .gt_table {
+#irtwqfhmfg .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -2519,7 +2533,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#wqflhunxzn .gt_heading {
+#irtwqfhmfg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -2531,7 +2545,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wqflhunxzn .gt_title {
+#irtwqfhmfg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -2541,7 +2555,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-bottom-width: 0;
 }
 
-#wqflhunxzn .gt_subtitle {
+#irtwqfhmfg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -2551,13 +2565,13 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-top-width: 0;
 }
 
-#wqflhunxzn .gt_bottom_border {
+#irtwqfhmfg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#wqflhunxzn .gt_col_headings {
+#irtwqfhmfg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2572,7 +2586,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wqflhunxzn .gt_col_heading {
+#irtwqfhmfg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2592,7 +2606,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   overflow-x: hidden;
 }
 
-#wqflhunxzn .gt_column_spanner_outer {
+#irtwqfhmfg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2604,15 +2618,15 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   padding-right: 4px;
 }
 
-#wqflhunxzn .gt_column_spanner_outer:first-child {
+#irtwqfhmfg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#wqflhunxzn .gt_column_spanner_outer:last-child {
+#irtwqfhmfg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#wqflhunxzn .gt_column_spanner {
+#irtwqfhmfg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2624,7 +2638,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   width: 100%;
 }
 
-#wqflhunxzn .gt_group_heading {
+#irtwqfhmfg .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2646,7 +2660,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   vertical-align: middle;
 }
 
-#wqflhunxzn .gt_empty_group_heading {
+#irtwqfhmfg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2661,15 +2675,15 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   vertical-align: middle;
 }
 
-#wqflhunxzn .gt_from_md > :first-child {
+#irtwqfhmfg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wqflhunxzn .gt_from_md > :last-child {
+#irtwqfhmfg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wqflhunxzn .gt_row {
+#irtwqfhmfg .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2688,7 +2702,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   overflow-x: hidden;
 }
 
-#wqflhunxzn .gt_stub {
+#irtwqfhmfg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -2700,7 +2714,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   padding-left: 12px;
 }
 
-#wqflhunxzn .gt_summary_row {
+#irtwqfhmfg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2710,7 +2724,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   padding-right: 5px;
 }
 
-#wqflhunxzn .gt_first_summary_row {
+#irtwqfhmfg .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2720,7 +2734,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#wqflhunxzn .gt_grand_summary_row {
+#irtwqfhmfg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -2730,7 +2744,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   padding-right: 5px;
 }
 
-#wqflhunxzn .gt_first_grand_summary_row {
+#irtwqfhmfg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -2740,11 +2754,11 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#wqflhunxzn .gt_striped {
+#irtwqfhmfg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#wqflhunxzn .gt_table_body {
+#irtwqfhmfg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -2753,7 +2767,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#wqflhunxzn .gt_footnotes {
+#irtwqfhmfg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2767,13 +2781,13 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wqflhunxzn .gt_footnote {
+#irtwqfhmfg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#wqflhunxzn .gt_sourcenotes {
+#irtwqfhmfg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -2787,41 +2801,41 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#wqflhunxzn .gt_sourcenote {
+#irtwqfhmfg .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#wqflhunxzn .gt_left {
+#irtwqfhmfg .gt_left {
   text-align: left;
 }
 
-#wqflhunxzn .gt_center {
+#irtwqfhmfg .gt_center {
   text-align: center;
 }
 
-#wqflhunxzn .gt_right {
+#irtwqfhmfg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wqflhunxzn .gt_font_normal {
+#irtwqfhmfg .gt_font_normal {
   font-weight: normal;
 }
 
-#wqflhunxzn .gt_font_bold {
+#irtwqfhmfg .gt_font_bold {
   font-weight: bold;
 }
 
-#wqflhunxzn .gt_font_italic {
+#irtwqfhmfg .gt_font_italic {
   font-style: italic;
 }
 
-#wqflhunxzn .gt_super {
+#irtwqfhmfg .gt_super {
   font-size: 65%;
 }
 
-#wqflhunxzn .gt_footnote_marks {
+#irtwqfhmfg .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -2976,12 +2990,12 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
 </details>
 <div class="cell-output-display">
 
-<div id="fnpkqdlvpa" style="overflow-x:auto;overflow-y:auto;width:auto;height:500px;">
+<div id="anohvfdbuy" style="overflow-x:auto;overflow-y:auto;width:auto;height:500px;">
 <style>html {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#fnpkqdlvpa .gt_table {
+#anohvfdbuy .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -3006,7 +3020,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#fnpkqdlvpa .gt_heading {
+#anohvfdbuy .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3018,7 +3032,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#fnpkqdlvpa .gt_title {
+#anohvfdbuy .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3028,7 +3042,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-bottom-width: 0;
 }
 
-#fnpkqdlvpa .gt_subtitle {
+#anohvfdbuy .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3038,13 +3052,13 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-top-width: 0;
 }
 
-#fnpkqdlvpa .gt_bottom_border {
+#anohvfdbuy .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#fnpkqdlvpa .gt_col_headings {
+#anohvfdbuy .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3059,7 +3073,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#fnpkqdlvpa .gt_col_heading {
+#anohvfdbuy .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3079,7 +3093,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   overflow-x: hidden;
 }
 
-#fnpkqdlvpa .gt_column_spanner_outer {
+#anohvfdbuy .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3091,15 +3105,15 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   padding-right: 4px;
 }
 
-#fnpkqdlvpa .gt_column_spanner_outer:first-child {
+#anohvfdbuy .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#fnpkqdlvpa .gt_column_spanner_outer:last-child {
+#anohvfdbuy .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#fnpkqdlvpa .gt_column_spanner {
+#anohvfdbuy .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3111,7 +3125,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   width: 100%;
 }
 
-#fnpkqdlvpa .gt_group_heading {
+#anohvfdbuy .gt_group_heading {
   padding: 8px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3133,7 +3147,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   vertical-align: middle;
 }
 
-#fnpkqdlvpa .gt_empty_group_heading {
+#anohvfdbuy .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3148,15 +3162,15 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   vertical-align: middle;
 }
 
-#fnpkqdlvpa .gt_from_md > :first-child {
+#anohvfdbuy .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#fnpkqdlvpa .gt_from_md > :last-child {
+#anohvfdbuy .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#fnpkqdlvpa .gt_row {
+#anohvfdbuy .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3175,7 +3189,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   overflow-x: hidden;
 }
 
-#fnpkqdlvpa .gt_stub {
+#anohvfdbuy .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3187,7 +3201,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   padding-left: 12px;
 }
 
-#fnpkqdlvpa .gt_summary_row {
+#anohvfdbuy .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3197,7 +3211,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   padding-right: 5px;
 }
 
-#fnpkqdlvpa .gt_first_summary_row {
+#anohvfdbuy .gt_first_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3207,7 +3221,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#fnpkqdlvpa .gt_grand_summary_row {
+#anohvfdbuy .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3217,7 +3231,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   padding-right: 5px;
 }
 
-#fnpkqdlvpa .gt_first_grand_summary_row {
+#anohvfdbuy .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3227,11 +3241,11 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#fnpkqdlvpa .gt_striped {
+#anohvfdbuy .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#fnpkqdlvpa .gt_table_body {
+#anohvfdbuy .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3240,7 +3254,7 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#fnpkqdlvpa .gt_footnotes {
+#anohvfdbuy .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3254,13 +3268,13 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#fnpkqdlvpa .gt_footnote {
+#anohvfdbuy .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding: 4px;
 }
 
-#fnpkqdlvpa .gt_sourcenotes {
+#anohvfdbuy .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3274,41 +3288,41 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#fnpkqdlvpa .gt_sourcenote {
+#anohvfdbuy .gt_sourcenote {
   font-size: 90%;
   padding: 4px;
 }
 
-#fnpkqdlvpa .gt_left {
+#anohvfdbuy .gt_left {
   text-align: left;
 }
 
-#fnpkqdlvpa .gt_center {
+#anohvfdbuy .gt_center {
   text-align: center;
 }
 
-#fnpkqdlvpa .gt_right {
+#anohvfdbuy .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#fnpkqdlvpa .gt_font_normal {
+#anohvfdbuy .gt_font_normal {
   font-weight: normal;
 }
 
-#fnpkqdlvpa .gt_font_bold {
+#anohvfdbuy .gt_font_bold {
   font-weight: bold;
 }
 
-#fnpkqdlvpa .gt_font_italic {
+#anohvfdbuy .gt_font_italic {
   font-style: italic;
 }
 
-#fnpkqdlvpa .gt_super {
+#anohvfdbuy .gt_super {
   font-size: 65%;
 }
 
-#fnpkqdlvpa .gt_footnote_marks {
+#anohvfdbuy .gt_footnote_marks {
   font-style: italic;
   font-weight: normal;
   font-size: 65%;
@@ -3383,6 +3397,48 @@ first_down         0.69960914  0.44558972  0.043968435</code></pre>
 <p><img src="index_files/figure-html/unnamed-chunk-14-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<section id="update" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="update">Update</h3>
+<p>I thought it might be fun to add an example of a 3D plot of the components. For this I will use <code>plotly</code>. It is one of the more interactive friendly visualisation tools, and from my experience the code is very similar from Python to R. If you are not too familiar with Python, writing this code may feel awkward. However, I think it is quite useful to get familiar with it because I can easily use plotly in Python without having to change much at all.</p>
+<div class="cell">
+<details open="">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="co"># making a seperate df will simplify plotly creation</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>pca_df <span class="ot">&lt;-</span> pca_fit <span class="sc">|&gt;</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">augment</span>(wr_stats)</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">plot_ly</span>(</span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>  pca_df, </span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="sc">~</span>.fittedPC1, </span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="sc">~</span>.fittedPC2, </span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">z =</span> <span class="sc">~</span>.fittedPC3, </span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="sc">~</span>position, </span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">colors =</span> <span class="fu">c</span>(<span class="st">'#386cb0'</span>, <span class="st">'#beaed4'</span>), </span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">text =</span> <span class="sc">~</span>receiver)</span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> fig <span class="sc">|&gt;</span> </span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_markers</span>()</span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> fig <span class="sc">|&gt;</span> </span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">scene =</span> <span class="fu">list</span>(</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'PC1'</span>),</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'PC2'</span>),</span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">zaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'PC3'</span>)</span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>    ))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<div class="cell page-columns page-full">
+<details open="">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>fig</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display column-page">
+<div id="htmlwidget-c9e198f448d692efc2e7" style="width:100%;height:464px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-c9e198f448d692efc2e7">{"x":{"visdat":{"9e4420de40a9":["function () ","plotlyVisDat"]},"cur_data":"9e4420de40a9","attrs":{"9e4420de40a9":{"x":{},"y":{},"z":{},"text":{},"color":{},"colors":["#386cb0","#beaed4"],"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter3d","mode":"markers","inherit":true}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"scene":{"xaxis":{"title":"PC1"},"yaxis":{"title":"PC2"},"zaxis":{"title":"PC3"}},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[-0.871800826240848,0.658123414155352,-1.99509357835078,-1.39916435726753,-2.50042714919745,-0.931297021726479,0.522767883823415,-2.62236706187284,-0.730734030742799,-0.863318314064349,-3.24271446203346,-2.60262514658324,-1.07998785662129,0.833961694307022,-2.32460150743797,-3.40965857506446,-2.31531910714005,-2.69554770820939,-0.844227781080342,-0.952833568022241,-1.4945748728677,-2.49863237336036,1.8275154046885,0.0655115017168023,1.17500054035903,-1.48028364373562,-1.04171536552347,-0.777916233788034,-0.985402184817427,-1.1873481591283,0.428073546533084,-2.22241876769507,-2.65616913705859,-1.17995000053788,-1.4091079771959,0.700448277963441],"y":[-0.0926447253749977,-1.30827018811692,-0.339021801394965,-0.737341684501781,-0.520750374368524,-0.523519592188798,-3.12009257282319,1.27212922598164,0.627819479313556,-2.37564928561712,-0.342560166249285,-0.16823627054533,-1.1064608075854,-2.58863764460839,-0.0897007809523706,0.10044627904376,-1.24918952384297,0.152044097547731,-1.6634153127966,-1.45839651270044,-0.570051979230448,-1.05177923844088,-2.13319775006507,-1.33733860493934,-1.40825925550194,-0.29714934360527,0.105914799252133,-0.92946068693914,0.149111240327917,-0.441418500071166,-1.76482240255634,0.40305220576538,0.231461763976529,-2.01092194049601,-1.14084467203003,-0.110204294035984],"z":[-0.811316376302006,0.870635207544885,0.0268441645959149,1.1046881543886,-0.341762554283032,1.16794550593844,1.13911832009948,2.35159527159312,-0.185010184665569,0.208707943472449,0.645763830997774,-0.205811111120265,-0.00866066835195596,1.45742920746835,3.43102705215617,-0.629862414338747,-1.9944631941865,0.638272048071924,-0.557774808451112,0.300685971705285,-0.58978790473784,0.268667669603301,-2.19199467230517,0.481540353596221,1.93296965698172,-0.861530516687761,1.43533693854927,-0.480737526867368,0.4659122893047,-1.23544368792563,0.420603270204523,0.967468185461643,0.420345949779159,-1.51300246651956,1.27492581523989,0.134133764171459],"text":["J.Cook","R.Gronkowski","K.Rudolph","Z.Ertz","R.Griffin","J.Doyle","T.Kelce","C.Brate","D.Waller","C.Uzomah","G.Swaim","A.Hooper","T.Higbee","G.Kittle","A.Firkser","R.Seals-Jones","J.Smith","E.Engram","D.Njoku","G.Everett","D.Arnold","T.Conklin","D.Goedert","D.Schultz","M.Andrews","D.Smythe","H.Hurst","F.Moreau","T.Hockenson","N.Fant","D.Knox","C.Kmet","A.Trautman","A.Okwuegbunam","P.Freiermuth","K.Pitts"],"type":"scatter3d","mode":"markers","name":"TE","marker":{"color":"rgba(56,108,176,1)","line":{"color":"rgba(56,108,176,1)"}},"textfont":{"color":"rgba(56,108,176,1)"},"error_y":{"color":"rgba(56,108,176,1)"},"error_x":{"color":"rgba(56,108,176,1)"},"line":{"color":"rgba(56,108,176,1)"},"frame":null},{"x":[2.00483992400553,1.12537430141748,1.76793211832564,-2.7102604307497,0.867771011379921,-0.275664826066283,0.342845499020438,2.72014518554014,1.02858686372501,0.571487938105688,0.516482009377461,1.84769358165647,-1.19565078152158,3.05805041418614,-0.471128123720827,1.19017737371212,0.280318809350061,1.29026421364152,0.319575272143728,-1.69794870420612,-2.22871193490269,3.25895293084477,-2.46578294693612,-1.3236745835683,1.09310912268947,-1.32370069535306,-0.0424296920463102,1.23246792216426,-0.277005609456142,-2.07806503824588,1.76148832057565,1.93525597701758,1.52050722932887,1.05664122151584,1.60264822320591,1.16309281854137,2.22181588663772,0.0764957910425642,1.39341114900268,2.50912951514021,2.00118527820434,-3.396141089132,0.267810876463166,1.44087287956156,-2.48735390310041,2.06428519522651,0.149708340521603,0.336948990698418,-0.298799566763672,1.70958783578006,0.0749201249563207,-0.930304127051964,-0.553878531602135,-0.26694891115113,-0.677119373813203,-0.0984312527748712,0.707525175056785,1.15901166138071,-0.10393613414394,1.36558889574175,1.4403557734046,-0.27943525183307,1.94614371899308,0.874760453532403,4.23256558691523,1.60803042112463,3.65270247884693,0.557360986063173,0.492975320903114,0.945692703095261,-2.62663591394297,1.39546483226829,0.462311027045318,2.70937733624994,0.517722563381186,-2.98217053231608,0.124626934055856,1.03621906823,1.67175998807629,-1.97924869462438,-0.270702710799577,2.06282468556542,1.85553254553349,-2.56761782567103,-0.317045590598006,0.107276982299047,-0.312477923124694,3.55643589890685,1.54227848648177,-1.60804927710007,-3.60298623100497,-0.604348403745449,-0.197482523350851,0.52854797037738],"y":[0.185663722610667,1.19375639863429,-1.85230553025926,-0.451495325732238,0.258358583332373,-0.368453210274364,-0.949078919392827,0.382087412183369,1.50635826708799,0.424841780345758,1.79553456349705,-2.12658183466599,-0.225109041097028,-0.448150284474857,2.14683534991512,0.194164602136185,1.70120757473097,2.12811755042028,-0.205597775445117,0.480680641039559,0.251632686265963,0.596547218618793,0.814549669389121,0.613357709530223,-0.230945470256426,2.48318448116899,1.69166937535287,1.21962420322677,-1.66282367800362,1.40352591235592,-2.34088733237347,0.449726370813824,-0.505274931785275,1.70595776610968,1.3187510640846,1.4338971376362,-3.64483522519792,2.49036266928717,1.05230686481748,2.49071933719063,-0.658691486148541,1.53630839918312,-0.167717173092331,-0.853808875122584,-0.614063028082951,-0.591653515876644,2.71562294105706,1.75827378061544,0.973960393925043,0.518137214041723,0.10046422867851,1.92634579094047,1.12975531726045,-1.68418544760807,-2.77304090422273,0.713165381402441,-0.998922311284029,-0.522025548767026,3.64479422109297,0.399226996583988,0.908242505515622,0.772035596066009,0.203134784676589,0.61147167740647,-0.252545028963038,1.44677534802744,1.43062523863342,-0.580604782980546,0.424540031415974,-1.63519132943744,-0.769870697992565,0.526956533849814,0.38976877767195,-0.500657784743235,1.14479015550738,0.115634342265891,0.709369409515123,-0.94277479458169,0.173280612185878,1.93286830709496,0.150642424268842,-0.723014986038987,0.684249582619094,0.958246197632905,0.295083978275632,1.49478076114934,-1.28136643214914,-2.6692760541962,0.95595048501787,-0.614598981210983,-2.71423687944435,-1.14149631980126,1.07503850301066,1.30567891270283],"z":[-1.20165884503095,0.186596582155036,2.24847093292778,-0.199389193168006,-0.215039736102934,0.409997065066211,1.27510256496698,0.322901161568847,0.125036248488318,-0.883903200332725,0.986213089824096,-0.236777655376167,-1.49677970748906,1.0267284519042,-0.28095597122996,-0.0567282779710477,0.287891722115425,-0.0703587763201986,-0.506318293736838,-0.490425549731404,-0.447983150175428,-0.93553705012646,0.666319246105161,1.13170930671267,0.0843645894371078,-0.679394550681112,0.196288731550712,-0.257724398470571,1.43224434848536,0.944908886565863,-0.558741603537843,0.4205666625254,-1.1445753082591,0.896355859333293,-0.197521893330102,-0.295796692925954,-0.272873258521177,0.256173398756213,-0.556274534818222,-1.4231845790967,1.6696087407199,0.946226489366641,1.04047777618551,0.68170188636077,-0.273754335088615,1.41544206937858,-0.624512024664832,-0.927085898182079,0.223300301171473,0.704648378825684,-0.642263451590263,0.547624625757594,0.273488115858886,-0.169638763380552,-1.79058414772131,1.08375220514299,-1.46246823680376,-1.07776370880149,-0.656148441464037,-0.186586856434738,-0.311430038503728,-0.360822786214272,0.966805348241825,1.1699260865327,1.44852620623801,-0.221747374591197,-0.758383856902853,-0.304016180488863,1.63161090453758,0.0392245082238371,-1.77636652654815,-2.22508783828114,-0.554892652488946,-0.12965984338277,-1.03494490365736,1.34006984038137,0.193015533653876,-0.930034773936498,0.877630520855096,-2.0718080838917,0.0261565903237932,0.342850762074589,0.365421390096228,0.0500591866064514,0.600353882718643,-1.29708614607809,0.125482260024596,-1.22993806395543,-1.24647753554034,-2.24129921034367,-2.24389481700228,-0.476282568600902,-0.143556445229972,-0.422253205745274],"text":["A.Brown","J.Jones","R.Cobb","C.Beasley","A.Thielen","K.Allen","R.Woods","D.Hopkins","O.Beckham","B.Cooks","S.Watkins","D.Adams","J.Landry","M.Evans","A.Robinson","A.Cooper","D.Parker","N.Agholor","D.Byrd","J.Crowder","A.Humphries","T.Lockett","C.Rogers","S.Shepard","K.Raymond","R.Anderson","D.Robinson","L.Treadwell","T.Boyd","Z.Pascal","K.Bourne","T.Patrick","M.Williams","K.Cole","C.Davis","Z.Jones","C.Kupp","K.Golladay","J.Reynolds","M.Valdes-Scantling","B.Pringle","R.McCloud","R.Gage","C.Wilson","B.Berrios","A.Lazard","J.Washington","M.Gallup","T.Smith","C.Kirk","Dj.Moore","C.Ridley","J.Meyers","H.Renfrow","M.Hardman","O.Zaccheaus","D.Harris","J.Guyton","D.Slayton","D.Metcalf","T.McLaurin","M.Brown","A.Brown","N.Westbrook-Ikhine","G.Davis","M.Callaway","D.Peoples-Jones","M.Pittman","J.Jennings","B.Aiyuk","L.Shenault","Q.Watkins","D.Mooney","J.Jefferson","C.Claypool","D.Duvernay","K.Osborn","C.Lamb","B.Edwards","J.Reagor","J.Jeudy","T.Higgins","V.Jefferson","T.Johnson","R.Bateman","N.Collins","J.Waddle","J.Chase","D.Smith","K.Toney","R.Moore","A.St","E.Moore","J.Palmer"],"type":"scatter3d","mode":"markers","name":"WR","marker":{"color":"rgba(190,174,212,1)","line":{"color":"rgba(190,174,212,1)"}},"textfont":{"color":"rgba(190,174,212,1)"},"error_y":{"color":"rgba(190,174,212,1)"},"error_x":{"color":"rgba(190,174,212,1)"},"line":{"color":"rgba(190,174,212,1)"},"frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
 <p>That is all for now. I have a few more similar posts saved in my draft, so they should be on here soon (within the next six months).</p>
 <div class="callout-caution callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
@@ -3399,7 +3455,7 @@ Session Info
 <div class="cell">
 <details open="">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="cell-output cell-output-stdout">
 <pre><code>R version 4.1.2 (2021-11-01)
@@ -3417,36 +3473,38 @@ attached base packages:
 [1] stats     graphics  grDevices datasets  utils     methods   base     
 
 other attached packages:
- [1] becausejustynfun_0.0.0.9000 ggrepel_0.9.1              
- [3] gt_0.3.1                    broom_0.8.0                
- [5] forcats_0.5.1               stringr_1.4.0              
- [7] dplyr_1.0.9                 purrr_0.3.4                
- [9] readr_2.1.2                 tidyr_1.2.0                
-[11] tibble_3.1.7                ggplot2_3.3.6              
-[13] tidyverse_1.3.1            
+ [1] plotly_4.10.0               becausejustynfun_0.0.0.9000
+ [3] ggrepel_0.9.1               gt_0.3.1                   
+ [5] broom_0.8.0                 forcats_0.5.1              
+ [7] stringr_1.4.0               dplyr_1.0.9                
+ [9] purrr_0.3.4                 readr_2.1.2                
+[11] tidyr_1.2.0                 tibble_3.1.7               
+[13] ggplot2_3.3.6               tidyverse_1.3.1            
 
 loaded via a namespace (and not attached):
- [1] Rcpp_1.0.8.3           lubridate_1.8.0        assertthat_0.2.1      
- [4] digest_0.6.29          utf8_1.2.2             R6_2.5.1              
- [7] cellranger_1.1.0       backports_1.4.1        reprex_2.0.1          
-[10] evaluate_0.15          httr_1.4.3             pillar_1.7.0          
-[13] rlang_1.0.2            readxl_1.3.1           rstudioapi_0.13.0-9000
-[16] checkmate_2.0.0        rmarkdown_2.14         labeling_0.4.2        
-[19] htmlwidgets_1.5.4      bit_4.0.4              munsell_0.5.0         
-[22] compiler_4.1.2         modelr_0.1.8           xfun_0.31.2           
-[25] pkgconfig_2.0.3        htmltools_0.5.2        tidyselect_1.1.2      
-[28] fansi_1.0.3            crayon_1.5.1           tzdb_0.2.0            
-[31] dbplyr_2.1.1           withr_2.5.0            grid_4.1.2            
-[34] jsonlite_1.8.0         gtable_0.3.0           lifecycle_1.0.1       
-[37] DBI_1.1.2              magrittr_2.0.3         scales_1.2.0          
-[40] cli_3.3.0              stringi_1.7.6          vroom_1.5.7           
-[43] farver_2.1.0           renv_0.15.5            fs_1.5.2              
-[46] ggthemes_4.2.4         xml2_1.3.3             ellipsis_0.3.2        
-[49] generics_0.1.2         vctrs_0.4.1            RColorBrewer_1.1-3    
-[52] tools_4.1.2            bit64_4.0.5            glue_1.6.2            
-[55] hms_1.1.1              parallel_4.1.2         fastmap_1.1.0         
-[58] yaml_2.3.5             colorspace_2.0-3       rvest_1.0.2           
-[61] knitr_1.39             haven_2.4.3            sass_0.4.1            </code></pre>
+ [1] httr_1.4.3             sass_0.4.1             bit64_4.0.5           
+ [4] vroom_1.5.7            jsonlite_1.8.0         viridisLite_0.4.0     
+ [7] modelr_0.1.8           assertthat_0.2.1       renv_0.15.5           
+[10] cellranger_1.1.0       yaml_2.3.5             pillar_1.7.0          
+[13] backports_1.4.1        glue_1.6.2             digest_0.6.29         
+[16] RColorBrewer_1.1-3     checkmate_2.0.0        rvest_1.0.2           
+[19] colorspace_2.0-3       htmltools_0.5.2        pkgconfig_2.0.3       
+[22] haven_2.4.3            scales_1.2.0           tzdb_0.2.0            
+[25] generics_0.1.2         farver_2.1.0           ellipsis_0.3.2        
+[28] withr_2.5.0            lazyeval_0.2.2         cli_3.3.0             
+[31] magrittr_2.0.3         crayon_1.5.1           readxl_1.3.1          
+[34] evaluate_0.15          fs_1.5.2               fansi_1.0.3           
+[37] xml2_1.3.3             ggthemes_4.2.4         tools_4.1.2           
+[40] data.table_1.14.2      hms_1.1.1              lifecycle_1.0.1       
+[43] munsell_0.5.0          reprex_2.0.1           compiler_4.1.2        
+[46] rlang_1.0.2            grid_4.1.2             rstudioapi_0.13.0-9000
+[49] htmlwidgets_1.5.4      crosstalk_1.2.0        labeling_0.4.2        
+[52] rmarkdown_2.14         gtable_0.3.0           DBI_1.1.2             
+[55] R6_2.5.1               lubridate_1.8.0        knitr_1.39            
+[58] fastmap_1.1.0          bit_4.0.4              utf8_1.2.2            
+[61] stringi_1.7.6          parallel_4.1.2         Rcpp_1.0.8.3          
+[64] vctrs_0.4.1            dbplyr_2.1.1           tidyselect_1.1.2      
+[67] xfun_0.31.2           </code></pre>
 </div>
 </div>
 </div>
@@ -3456,6 +3514,7 @@ loaded via a namespace (and not attached):
 
 <!-- -->
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -3590,293 +3649,332 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <script src="https://giscus.app/client.js" data-repo="becausejustyn/blog-becausejustyn" data-repo-id="R_kgDOHjBvGw" data-category="General" data-category-id="DIC_kwDOHjBvG84CP1Ib" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb17" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "NFL WR PCA with Tidyverse"</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2022-07-07"</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [r, nfl, unsupervised learning]</span></span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="co">    highlight: true</span></span>
-<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: show</span></span>
-<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
-<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a><span class="co">    highlight-style: github</span></span>
-<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a>Doing a PCA in R is quite easy, but visualising the results can be a challenge. I am going to demonstrate it with NFL data just to add some complexity to it.</span>
-<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>I wont write much on this post due to time constraints, however, most of the code is commented well enough.</span>
-<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
-<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom)</span>
-<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
-<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggrepel)</span>
-<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(becausejustynfun)</span>
-<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-28"><a href="#cb17-28" aria-hidden="true" tabindex="-1"></a>How you load the data depends if you want to use the package <span class="in">`nflfastR`</span> or not. While it has many useful features, you may not want to use it if you already have the data saved that you want to use.</span>
-<span id="cb17-29"><a href="#cb17-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-30"><a href="#cb17-30" aria-hidden="true" tabindex="-1"></a>::: {.panel-tabset}</span>
-<span id="cb17-31"><a href="#cb17-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-32"><a href="#cb17-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Using nflfastR</span></span>
-<span id="cb17-33"><a href="#cb17-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-36"><a href="#cb17-36" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-37"><a href="#cb17-37" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb17-38"><a href="#cb17-38" aria-hidden="true" tabindex="-1"></a>players <span class="ot">&lt;-</span> nflfastR<span class="sc">::</span><span class="fu">load_player_stats</span>(<span class="dv">2021</span>)</span>
-<span id="cb17-39"><a href="#cb17-39" aria-hidden="true" tabindex="-1"></a>rosters <span class="ot">&lt;-</span> nflfastR<span class="sc">::</span><span class="fu">fast_scraper_roster</span>(<span class="dv">2021</span>)</span>
-<span id="cb17-40"><a href="#cb17-40" aria-hidden="true" tabindex="-1"></a>pbp <span class="ot">&lt;-</span> nflfastR<span class="sc">::</span><span class="fu">load_pbp</span>(<span class="dv">2021</span>)</span>
-<span id="cb17-41"><a href="#cb17-41" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-42"><a href="#cb17-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-43"><a href="#cb17-43" aria-hidden="true" tabindex="-1"></a>It is worth noting that you can get multiple seasons at once using this method. E.g. <span class="in">`nflfastR::load_player_stats(2020:2021)`</span>.</span>
-<span id="cb17-44"><a href="#cb17-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-45"><a href="#cb17-45" aria-hidden="true" tabindex="-1"></a><span class="fu">## Without nflfastR</span></span>
-<span id="cb17-46"><a href="#cb17-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-49"><a href="#cb17-49" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-50"><a href="#cb17-50" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb17-51"><a href="#cb17-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-52"><a href="#cb17-52" aria-hidden="true" tabindex="-1"></a><span class="co"># if you have the data saved locally</span></span>
-<span id="cb17-53"><a href="#cb17-53" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">map_df</span>(<span class="fu">c</span>(<span class="dv">2010</span><span class="sc">:</span><span class="dv">2020</span>), <span class="cf">function</span>(x) {</span>
-<span id="cb17-54"><a href="#cb17-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">readRDS</span>(</span>
-<span id="cb17-55"><a href="#cb17-55" aria-hidden="true" tabindex="-1"></a>    glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"~/Documents/nfl/data/pbp/play_by_play_{x}.rds"</span>)</span>
-<span id="cb17-56"><a href="#cb17-56" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb17-57"><a href="#cb17-57" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb17-58"><a href="#cb17-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-59"><a href="#cb17-59" aria-hidden="true" tabindex="-1"></a><span class="co"># if you do not have it saved locally</span></span>
-<span id="cb17-60"><a href="#cb17-60" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">map_df</span>(<span class="fu">c</span>(<span class="dv">2010</span><span class="sc">:</span><span class="dv">2020</span>), <span class="cf">function</span>(x) {</span>
-<span id="cb17-61"><a href="#cb17-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">readRDS</span>(</span>
-<span id="cb17-62"><a href="#cb17-62" aria-hidden="true" tabindex="-1"></a>    glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"https://raw.githubusercontent.com/guga31bb/nflfastR-data/master/data/play_by_play_{x}.rds"</span>)</span>
-<span id="cb17-63"><a href="#cb17-63" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb17-64"><a href="#cb17-64" aria-hidden="true" tabindex="-1"></a>})</span>
-<span id="cb17-65"><a href="#cb17-65" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-66"><a href="#cb17-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-67"><a href="#cb17-67" aria-hidden="true" tabindex="-1"></a>I thought it was worth showing because this was a trick that I found quite useful once I discovered it. I have used it countless times for similar tasks. By using <span class="in">`glue()`</span>, you can map across the values like an f string in Python.</span>
-<span id="cb17-68"><a href="#cb17-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-69"><a href="#cb17-69" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb17-70"><a href="#cb17-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-73"><a href="#cb17-73" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-74"><a href="#cb17-74" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb17-75"><a href="#cb17-75" aria-hidden="true" tabindex="-1"></a>pbp_wr <span class="ot">&lt;-</span> pbp <span class="sc">|&gt;</span></span>
-<span id="cb17-76"><a href="#cb17-76" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb17-77"><a href="#cb17-77" aria-hidden="true" tabindex="-1"></a>    <span class="co"># if they caught the ball in the middle of the field, </span></span>
-<span id="cb17-78"><a href="#cb17-78" aria-hidden="true" tabindex="-1"></a>    <span class="co"># assign 0 otherwise, assign 1 </span></span>
-<span id="cb17-79"><a href="#cb17-79" aria-hidden="true" tabindex="-1"></a>    <span class="at">outside_pass =</span> <span class="fu">ifelse</span>(pass_location <span class="sc">!=</span> <span class="st">"middle"</span>, <span class="dv">1</span>, <span class="dv">0</span>),</span>
-<span id="cb17-80"><a href="#cb17-80" aria-hidden="true" tabindex="-1"></a>    <span class="at">pass_air_yards =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(air_yards), <span class="dv">0</span>, air_yards),</span>
-<span id="cb17-81"><a href="#cb17-81" aria-hidden="true" tabindex="-1"></a>    <span class="at">pass_air_yards =</span> <span class="fu">ifelse</span>(ydstogo <span class="sc">&lt;=</span> <span class="dv">10</span>, pass_air_yards, <span class="cn">NA</span>)</span>
-<span id="cb17-82"><a href="#cb17-82" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb17-83"><a href="#cb17-83" aria-hidden="true" tabindex="-1"></a>  <span class="co"># rec id is a bit of a hack to keep that value</span></span>
-<span id="cb17-84"><a href="#cb17-84" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(receiver_id, fantasy_id) <span class="sc">|&gt;</span></span>
-<span id="cb17-85"><a href="#cb17-85" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb17-86"><a href="#cb17-86" aria-hidden="true" tabindex="-1"></a>    <span class="at">rec =</span> <span class="fu">sum</span>(complete_pass),</span>
-<span id="cb17-87"><a href="#cb17-87" aria-hidden="true" tabindex="-1"></a>    <span class="at">air_yards =</span> <span class="fu">mean</span>(pass_air_yards, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb17-88"><a href="#cb17-88" aria-hidden="true" tabindex="-1"></a>    <span class="at">yards_per_target =</span> <span class="fu">mean</span>(yards_gained, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb17-89"><a href="#cb17-89" aria-hidden="true" tabindex="-1"></a>    <span class="at">yards_after_catch =</span> <span class="fu">mean</span>(yards_after_catch, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb17-90"><a href="#cb17-90" aria-hidden="true" tabindex="-1"></a>    <span class="at">td_rate =</span> <span class="fu">mean</span>(pass_touchdown),</span>
-<span id="cb17-91"><a href="#cb17-91" aria-hidden="true" tabindex="-1"></a>    <span class="at">outside_rec =</span> <span class="fu">mean</span>(outside_pass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb17-92"><a href="#cb17-92" aria-hidden="true" tabindex="-1"></a>    <span class="at">dist_from_sticks =</span> <span class="fu">mean</span>(pass_air_yards <span class="sc">-</span> ydstogo, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb17-93"><a href="#cb17-93" aria-hidden="true" tabindex="-1"></a>    <span class="co"># first down percentage</span></span>
-<span id="cb17-94"><a href="#cb17-94" aria-hidden="true" tabindex="-1"></a>    <span class="at">first_down =</span> <span class="fu">mean</span>(first_down, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb17-95"><a href="#cb17-95" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb17-96"><a href="#cb17-96" aria-hidden="true" tabindex="-1"></a>  <span class="co"># so you don't get random players like a QB</span></span>
-<span id="cb17-97"><a href="#cb17-97" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(rec <span class="sc">&gt;</span> <span class="dv">25</span>) <span class="sc">|&gt;</span></span>
-<span id="cb17-98"><a href="#cb17-98" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
-<span id="cb17-99"><a href="#cb17-99" aria-hidden="true" tabindex="-1"></a>    pbp <span class="sc">|&gt;</span></span>
-<span id="cb17-100"><a href="#cb17-100" aria-hidden="true" tabindex="-1"></a>      <span class="fu">count</span>(receiver_id, fantasy_id, receiver, posteam) <span class="sc">|&gt;</span></span>
-<span id="cb17-101"><a href="#cb17-101" aria-hidden="true" tabindex="-1"></a>      <span class="fu">group_by</span>(receiver_id) <span class="sc">|&gt;</span></span>
-<span id="cb17-102"><a href="#cb17-102" aria-hidden="true" tabindex="-1"></a>      <span class="fu">arrange</span>(<span class="sc">-</span>n) <span class="sc">|&gt;</span></span>
-<span id="cb17-103"><a href="#cb17-103" aria-hidden="true" tabindex="-1"></a>      <span class="co"># this will keep the first instance of a player</span></span>
-<span id="cb17-104"><a href="#cb17-104" aria-hidden="true" tabindex="-1"></a>      <span class="co"># this is to add players non-numerical values</span></span>
-<span id="cb17-105"><a href="#cb17-105" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(<span class="at">rn =</span> <span class="fu">row_number</span>()) <span class="sc">|&gt;</span></span>
-<span id="cb17-106"><a href="#cb17-106" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(rn <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">|&gt;</span></span>
-<span id="cb17-107"><a href="#cb17-107" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(<span class="sc">-</span>n, <span class="sc">-</span>rn)) <span class="sc">|&gt;</span></span>
-<span id="cb17-108"><a href="#cb17-108" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(receiver, <span class="at">.before =</span> rec) <span class="sc">|&gt;</span> </span>
-<span id="cb17-109"><a href="#cb17-109" aria-hidden="true" tabindex="-1"></a>  <span class="co"># this second join is to add the players position</span></span>
-<span id="cb17-110"><a href="#cb17-110" aria-hidden="true" tabindex="-1"></a>  <span class="co"># here we are using the gsid, which is why</span></span>
-<span id="cb17-111"><a href="#cb17-111" aria-hidden="true" tabindex="-1"></a>  <span class="co"># we wanted the fantasy id before</span></span>
-<span id="cb17-112"><a href="#cb17-112" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
-<span id="cb17-113"><a href="#cb17-113" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(rosters, position, gsis_id), <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'fantasy_id'</span> <span class="ot">=</span> <span class="st">'gsis_id'</span>)</span>
-<span id="cb17-114"><a href="#cb17-114" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb17-115"><a href="#cb17-115" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(position <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">'WR'</span>, <span class="st">'TE'</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb17-116"><a href="#cb17-116" aria-hidden="true" tabindex="-1"></a>  <span class="co"># good practice to ungroup at the end</span></span>
-<span id="cb17-117"><a href="#cb17-117" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
-<span id="cb17-118"><a href="#cb17-118" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-119"><a href="#cb17-119" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-120"><a href="#cb17-120" aria-hidden="true" tabindex="-1"></a>If the dataset is large enough, you may get timeout errors, if that is the case, you can seperate the second left_join() into a seperate call, e.g.</span>
-<span id="cb17-121"><a href="#cb17-121" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-124"><a href="#cb17-124" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-125"><a href="#cb17-125" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb17-126"><a href="#cb17-126" aria-hidden="true" tabindex="-1"></a><span class="co">#| code-fold: true</span></span>
-<span id="cb17-127"><a href="#cb17-127" aria-hidden="true" tabindex="-1"></a><span class="co">#| code-summary: "Show the code"</span></span>
-<span id="cb17-128"><a href="#cb17-128" aria-hidden="true" tabindex="-1"></a>pbp_wr <span class="ot">&lt;-</span> pbp <span class="sc">|&gt;</span></span>
-<span id="cb17-129"><a href="#cb17-129" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb17-130"><a href="#cb17-130" aria-hidden="true" tabindex="-1"></a>    <span class="at">outside_pass =</span> <span class="fu">ifelse</span>(pass_location <span class="sc">!=</span> <span class="st">"middle"</span>, <span class="dv">1</span>, <span class="dv">0</span>),</span>
-<span id="cb17-131"><a href="#cb17-131" aria-hidden="true" tabindex="-1"></a>    <span class="at">pass_air_yards =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(air_yards), <span class="dv">0</span>, air_yards),</span>
-<span id="cb17-132"><a href="#cb17-132" aria-hidden="true" tabindex="-1"></a>    <span class="at">pass_air_yards =</span> <span class="fu">ifelse</span>(ydstogo <span class="sc">&lt;=</span> <span class="dv">10</span>, pass_air_yards, <span class="cn">NA</span>)</span>
-<span id="cb17-133"><a href="#cb17-133" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb17-134"><a href="#cb17-134" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(receiver_id, fantasy_id) <span class="sc">|&gt;</span></span>
-<span id="cb17-135"><a href="#cb17-135" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb17-136"><a href="#cb17-136" aria-hidden="true" tabindex="-1"></a>    <span class="at">rec =</span> <span class="fu">sum</span>(complete_pass),</span>
-<span id="cb17-137"><a href="#cb17-137" aria-hidden="true" tabindex="-1"></a>    <span class="at">air_yards =</span> <span class="fu">mean</span>(pass_air_yards, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb17-138"><a href="#cb17-138" aria-hidden="true" tabindex="-1"></a>    <span class="at">yards_per_target =</span> <span class="fu">mean</span>(yards_gained, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb17-139"><a href="#cb17-139" aria-hidden="true" tabindex="-1"></a>    <span class="at">yards_after_catch =</span> <span class="fu">mean</span>(yards_after_catch, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb17-140"><a href="#cb17-140" aria-hidden="true" tabindex="-1"></a>    <span class="at">td_rate =</span> <span class="fu">mean</span>(pass_touchdown),</span>
-<span id="cb17-141"><a href="#cb17-141" aria-hidden="true" tabindex="-1"></a>    <span class="at">outside_rec =</span> <span class="fu">mean</span>(outside_pass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb17-142"><a href="#cb17-142" aria-hidden="true" tabindex="-1"></a>    <span class="at">dist_from_sticks =</span> <span class="fu">mean</span>(pass_air_yards <span class="sc">-</span> ydstogo, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb17-143"><a href="#cb17-143" aria-hidden="true" tabindex="-1"></a>    <span class="at">first_down =</span> <span class="fu">mean</span>(first_down, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb17-144"><a href="#cb17-144" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb17-145"><a href="#cb17-145" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(rec <span class="sc">&gt;</span> <span class="dv">25</span>) <span class="sc">|&gt;</span></span>
-<span id="cb17-146"><a href="#cb17-146" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
-<span id="cb17-147"><a href="#cb17-147" aria-hidden="true" tabindex="-1"></a>    pbp <span class="sc">|&gt;</span></span>
-<span id="cb17-148"><a href="#cb17-148" aria-hidden="true" tabindex="-1"></a>      <span class="fu">count</span>(receiver_id, fantasy_id, receiver, posteam) <span class="sc">|&gt;</span></span>
-<span id="cb17-149"><a href="#cb17-149" aria-hidden="true" tabindex="-1"></a>      <span class="fu">group_by</span>(receiver_id) <span class="sc">|&gt;</span></span>
-<span id="cb17-150"><a href="#cb17-150" aria-hidden="true" tabindex="-1"></a>      <span class="fu">arrange</span>(<span class="sc">-</span>n) <span class="sc">|&gt;</span></span>
-<span id="cb17-151"><a href="#cb17-151" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(<span class="at">rn =</span> <span class="fu">row_number</span>()) <span class="sc">|&gt;</span></span>
-<span id="cb17-152"><a href="#cb17-152" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(rn <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">|&gt;</span></span>
-<span id="cb17-153"><a href="#cb17-153" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(<span class="sc">-</span>n, <span class="sc">-</span>rn)) <span class="sc">|&gt;</span></span>
-<span id="cb17-154"><a href="#cb17-154" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(receiver, <span class="at">.before =</span> rec) </span>
-<span id="cb17-155"><a href="#cb17-155" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-156"><a href="#cb17-156" aria-hidden="true" tabindex="-1"></a>pbp_wr <span class="ot">&lt;-</span> pbp_wr <span class="sc">|&gt;</span> </span>
-<span id="cb17-157"><a href="#cb17-157" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
-<span id="cb17-158"><a href="#cb17-158" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(rosters, position, gsis_id), <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'fantasy_id'</span> <span class="ot">=</span> <span class="st">'gsis_id'</span>)</span>
-<span id="cb17-159"><a href="#cb17-159" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
-<span id="cb17-160"><a href="#cb17-160" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(position <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">'WR'</span>, <span class="st">'TE'</span>)) <span class="sc">|&gt;</span></span>
-<span id="cb17-161"><a href="#cb17-161" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
-<span id="cb17-162"><a href="#cb17-162" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-163"><a href="#cb17-163" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-166"><a href="#cb17-166" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-167"><a href="#cb17-167" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb17-168"><a href="#cb17-168" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
-<span id="cb17-169"><a href="#cb17-169" aria-hidden="true" tabindex="-1"></a>wr_stats <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'wr_stats_2021.csv'</span>)</span>
-<span id="cb17-170"><a href="#cb17-170" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-171"><a href="#cb17-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-172"><a href="#cb17-172" aria-hidden="true" tabindex="-1"></a>This is the resulting dataframe. To run a PCA we only want the numeric columns, however, we will be using the character columns for visualising at a later step.</span>
-<span id="cb17-173"><a href="#cb17-173" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-176"><a href="#cb17-176" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-177"><a href="#cb17-177" aria-hidden="true" tabindex="-1"></a><span class="co">#| column: screen</span></span>
-<span id="cb17-178"><a href="#cb17-178" aria-hidden="true" tabindex="-1"></a>wr_stats <span class="sc">|&gt;</span></span>
-<span id="cb17-179"><a href="#cb17-179" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
-<span id="cb17-180"><a href="#cb17-180" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_options</span>(<span class="at">container.height =</span> <span class="st">'300px'</span>)</span>
-<span id="cb17-181"><a href="#cb17-181" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-182"><a href="#cb17-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-185"><a href="#cb17-185" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-186"><a href="#cb17-186" aria-hidden="true" tabindex="-1"></a>pca_fit <span class="ot">&lt;-</span> wr_stats <span class="sc">|&gt;</span></span>
-<span id="cb17-187"><a href="#cb17-187" aria-hidden="true" tabindex="-1"></a>  <span class="co"># only keep numerical columns</span></span>
-<span id="cb17-188"><a href="#cb17-188" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">where</span>(is.numeric)) <span class="sc">|&gt;</span> </span>
-<span id="cb17-189"><a href="#cb17-189" aria-hidden="true" tabindex="-1"></a>  <span class="co"># scale data, prcomp(scale = TRUE) also works</span></span>
-<span id="cb17-190"><a href="#cb17-190" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale</span>() <span class="sc">|&gt;</span> </span>
-<span id="cb17-191"><a href="#cb17-191" aria-hidden="true" tabindex="-1"></a>  <span class="co"># PCA</span></span>
-<span id="cb17-192"><a href="#cb17-192" aria-hidden="true" tabindex="-1"></a>  <span class="fu">prcomp</span>() </span>
-<span id="cb17-193"><a href="#cb17-193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-194"><a href="#cb17-194" aria-hidden="true" tabindex="-1"></a>pca_fit</span>
-<span id="cb17-195"><a href="#cb17-195" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-196"><a href="#cb17-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-197"><a href="#cb17-197" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-200"><a href="#cb17-200" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-201"><a href="#cb17-201" aria-hidden="true" tabindex="-1"></a><span class="co">#| column: page</span></span>
-<span id="cb17-202"><a href="#cb17-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-203"><a href="#cb17-203" aria-hidden="true" tabindex="-1"></a><span class="co"># helper for the axis labels</span></span>
-<span id="cb17-204"><a href="#cb17-204" aria-hidden="true" tabindex="-1"></a>importance <span class="ot">&lt;-</span> pca_fit <span class="sc">|&gt;</span> </span>
-<span id="cb17-205"><a href="#cb17-205" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>(<span class="at">matrix =</span> <span class="st">"eigenvalues"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb17-206"><a href="#cb17-206" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PC <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)) <span class="sc">|&gt;</span> </span>
-<span id="cb17-207"><a href="#cb17-207" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(percent) <span class="sc">|&gt;</span> </span>
-<span id="cb17-208"><a href="#cb17-208" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="dv">3</span>)</span>
-<span id="cb17-209"><a href="#cb17-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-210"><a href="#cb17-210" aria-hidden="true" tabindex="-1"></a>pca_fit <span class="sc">|&gt;</span></span>
-<span id="cb17-211"><a href="#cb17-211" aria-hidden="true" tabindex="-1"></a>  <span class="co"># add original dataset back in</span></span>
-<span id="cb17-212"><a href="#cb17-212" aria-hidden="true" tabindex="-1"></a>  <span class="fu">augment</span>(wr_stats) <span class="sc">|&gt;</span> </span>
-<span id="cb17-213"><a href="#cb17-213" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(</span>
-<span id="cb17-214"><a href="#cb17-214" aria-hidden="true" tabindex="-1"></a>    .fittedPC1, </span>
-<span id="cb17-215"><a href="#cb17-215" aria-hidden="true" tabindex="-1"></a>    .fittedPC2, </span>
-<span id="cb17-216"><a href="#cb17-216" aria-hidden="true" tabindex="-1"></a>    <span class="at">colour =</span> position)) <span class="sc">+</span> </span>
-<span id="cb17-217"><a href="#cb17-217" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="fl">1.5</span>) <span class="sc">+</span></span>
-<span id="cb17-218"><a href="#cb17-218" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb17-219"><a href="#cb17-219" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="fu">paste0</span>(<span class="st">'PC1 (Accounts for '</span>, importance[[<span class="dv">1</span>]]<span class="sc">*</span><span class="dv">100</span>, <span class="st">'% of Variance)'</span>), </span>
-<span id="cb17-220"><a href="#cb17-220" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="fu">paste0</span>(<span class="st">'PC2 (Accounts for '</span>, importance[[<span class="dv">2</span>]]<span class="sc">*</span><span class="dv">100</span>, <span class="st">'% of Variance)'</span>) </span>
-<span id="cb17-221"><a href="#cb17-221" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
-<span id="cb17-222"><a href="#cb17-222" aria-hidden="true" tabindex="-1"></a>  becausejustynfun<span class="sc">::</span><span class="fu">white_theme</span>()</span>
-<span id="cb17-223"><a href="#cb17-223" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-224"><a href="#cb17-224" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-225"><a href="#cb17-225" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-228"><a href="#cb17-228" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-229"><a href="#cb17-229" aria-hidden="true" tabindex="-1"></a><span class="co">#| column: page</span></span>
-<span id="cb17-230"><a href="#cb17-230" aria-hidden="true" tabindex="-1"></a>pca_fit <span class="sc">|&gt;</span></span>
-<span id="cb17-231"><a href="#cb17-231" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>(<span class="at">matrix =</span> <span class="st">"rotation"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb17-232"><a href="#cb17-232" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(</span>
-<span id="cb17-233"><a href="#cb17-233" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_from =</span> <span class="st">"PC"</span>, </span>
-<span id="cb17-234"><a href="#cb17-234" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_prefix =</span> <span class="st">"PC"</span>, </span>
-<span id="cb17-235"><a href="#cb17-235" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_from =</span> <span class="st">"value"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb17-236"><a href="#cb17-236" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
-<span id="cb17-237"><a href="#cb17-237" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_options</span>(<span class="at">container.height =</span> <span class="st">'500px'</span>)</span>
-<span id="cb17-238"><a href="#cb17-238" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-239"><a href="#cb17-239" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-242"><a href="#cb17-242" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-243"><a href="#cb17-243" aria-hidden="true" tabindex="-1"></a><span class="co"># define arrow style for plotting</span></span>
-<span id="cb17-244"><a href="#cb17-244" aria-hidden="true" tabindex="-1"></a>arrow_style <span class="ot">&lt;-</span> <span class="fu">arrow</span>(</span>
-<span id="cb17-245"><a href="#cb17-245" aria-hidden="true" tabindex="-1"></a>  <span class="at">angle =</span> <span class="dv">20</span>, </span>
-<span id="cb17-246"><a href="#cb17-246" aria-hidden="true" tabindex="-1"></a>  <span class="at">ends =</span> <span class="st">"first"</span>, </span>
-<span id="cb17-247"><a href="#cb17-247" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"closed"</span>, </span>
-<span id="cb17-248"><a href="#cb17-248" aria-hidden="true" tabindex="-1"></a>  <span class="at">length =</span> grid<span class="sc">::</span><span class="fu">unit</span>(<span class="dv">8</span>, <span class="st">"pt"</span>)</span>
-<span id="cb17-249"><a href="#cb17-249" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb17-250"><a href="#cb17-250" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-251"><a href="#cb17-251" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-254"><a href="#cb17-254" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-255"><a href="#cb17-255" aria-hidden="true" tabindex="-1"></a><span class="co"># plot rotation matrix</span></span>
-<span id="cb17-256"><a href="#cb17-256" aria-hidden="true" tabindex="-1"></a>pca_fit <span class="sc">|&gt;</span></span>
-<span id="cb17-257"><a href="#cb17-257" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>(<span class="at">matrix =</span> <span class="st">"rotation"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb17-258"><a href="#cb17-258" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(</span>
-<span id="cb17-259"><a href="#cb17-259" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_from =</span> <span class="st">"PC"</span>, </span>
-<span id="cb17-260"><a href="#cb17-260" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_prefix =</span> <span class="st">"PC"</span>, </span>
-<span id="cb17-261"><a href="#cb17-261" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_from =</span> <span class="st">"value"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb17-262"><a href="#cb17-262" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(PC1, PC2)) <span class="sc">+</span></span>
-<span id="cb17-263"><a href="#cb17-263" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">palette =</span> <span class="st">"Accent"</span>, <span class="at">direction =</span> <span class="dv">1</span>) <span class="sc">+</span> </span>
-<span id="cb17-264"><a href="#cb17-264" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(</span>
-<span id="cb17-265"><a href="#cb17-265" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">colour =</span> column),</span>
-<span id="cb17-266"><a href="#cb17-266" aria-hidden="true" tabindex="-1"></a>    <span class="at">xend =</span> <span class="dv">0</span>, </span>
-<span id="cb17-267"><a href="#cb17-267" aria-hidden="true" tabindex="-1"></a>    <span class="at">yend =</span> <span class="dv">0</span>, </span>
-<span id="cb17-268"><a href="#cb17-268" aria-hidden="true" tabindex="-1"></a>    <span class="at">arrow =</span> arrow_style) <span class="sc">+</span></span>
-<span id="cb17-269"><a href="#cb17-269" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>( </span>
-<span id="cb17-270"><a href="#cb17-270" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">label =</span> column, <span class="at">colour =</span> column),</span>
-<span id="cb17-271"><a href="#cb17-271" aria-hidden="true" tabindex="-1"></a>    <span class="at">hjust =</span> <span class="dv">1</span>, </span>
-<span id="cb17-272"><a href="#cb17-272" aria-hidden="true" tabindex="-1"></a>    <span class="at">nudge_x =</span> <span class="sc">-</span><span class="fl">0.02</span></span>
-<span id="cb17-273"><a href="#cb17-273" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb17-274"><a href="#cb17-274" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>)) <span class="sc">+</span> </span>
-<span id="cb17-275"><a href="#cb17-275" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
-<span id="cb17-276"><a href="#cb17-276" aria-hidden="true" tabindex="-1"></a>  becausejustynfun<span class="sc">::</span><span class="fu">theme_dark_blue</span>() <span class="sc">+</span> </span>
-<span id="cb17-277"><a href="#cb17-277" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span>
-<span id="cb17-278"><a href="#cb17-278" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-279"><a href="#cb17-279" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-280"><a href="#cb17-280" aria-hidden="true" tabindex="-1"></a>I used a dark theme for this plot because of the different colours used for the components. </span>
-<span id="cb17-281"><a href="#cb17-281" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-284"><a href="#cb17-284" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-285"><a href="#cb17-285" aria-hidden="true" tabindex="-1"></a>pca_fit <span class="sc">|&gt;</span></span>
-<span id="cb17-286"><a href="#cb17-286" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>(<span class="at">matrix =</span> <span class="st">"eigenvalues"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb17-287"><a href="#cb17-287" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
-<span id="cb17-288"><a href="#cb17-288" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_options</span>(<span class="at">container.height =</span> <span class="st">'500px'</span>)</span>
-<span id="cb17-289"><a href="#cb17-289" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-290"><a href="#cb17-290" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-293"><a href="#cb17-293" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-294"><a href="#cb17-294" aria-hidden="true" tabindex="-1"></a>pca_fit <span class="sc">|&gt;</span></span>
-<span id="cb17-295"><a href="#cb17-295" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>(<span class="at">matrix =</span> <span class="st">"eigenvalues"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb17-296"><a href="#cb17-296" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(PC, percent)) <span class="sc">+</span></span>
-<span id="cb17-297"><a href="#cb17-297" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">"#56B4E9"</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb17-298"><a href="#cb17-298" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>) <span class="sc">+</span></span>
-<span id="cb17-299"><a href="#cb17-299" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
-<span id="cb17-300"><a href="#cb17-300" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="fl">0.40</span>, <span class="fl">0.05</span>),</span>
-<span id="cb17-301"><a href="#cb17-301" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">percent_format</span>(), </span>
-<span id="cb17-302"><a href="#cb17-302" aria-hidden="true" tabindex="-1"></a>    <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.01</span>))</span>
-<span id="cb17-303"><a href="#cb17-303" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb17-304"><a href="#cb17-304" aria-hidden="true" tabindex="-1"></a>  becausejustynfun<span class="sc">::</span><span class="fu">white_theme</span>()</span>
-<span id="cb17-305"><a href="#cb17-305" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-306"><a href="#cb17-306" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-307"><a href="#cb17-307" aria-hidden="true" tabindex="-1"></a>That is all for now. I have a few more similar posts saved in my draft, so they should be on here soon (within the next six months).</span>
-<span id="cb17-308"><a href="#cb17-308" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-309"><a href="#cb17-309" aria-hidden="true" tabindex="-1"></a>:::{.callout-caution collapse="true"}</span>
-<span id="cb17-310"><a href="#cb17-310" aria-hidden="true" tabindex="-1"></a><span class="fu">## Session Info</span></span>
-<span id="cb17-311"><a href="#cb17-311" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb17-314"><a href="#cb17-314" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb17-315"><a href="#cb17-315" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span>
-<span id="cb17-316"><a href="#cb17-316" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb17-317"><a href="#cb17-317" aria-hidden="true" tabindex="-1"></a>:::</span>
+<div class="sourceCode" id="cb19" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "NFL WR PCA with Tidyverse"</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2022-07-07"</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [r, nfl, unsupervised learning]</span></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="co">    highlight: true</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="co">    code-fold: show</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a><span class="co">    code-tools: true</span></span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a><span class="co">    highlight-style: github</span></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a>Doing a PCA in R is quite easy, but visualising the results can be a challenge. I am going to demonstrate it with NFL data just to add some complexity to it.</span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>I wont write much on this post due to time constraints, however, most of the code is commented well enough.</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-19"><a href="#cb19-19" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-20"><a href="#cb19-20" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb19-21"><a href="#cb19-21" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb19-22"><a href="#cb19-22" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom)</span>
+<span id="cb19-23"><a href="#cb19-23" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
+<span id="cb19-24"><a href="#cb19-24" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggrepel)</span>
+<span id="cb19-25"><a href="#cb19-25" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(becausejustynfun)</span>
+<span id="cb19-26"><a href="#cb19-26" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-27"><a href="#cb19-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-28"><a href="#cb19-28" aria-hidden="true" tabindex="-1"></a>How you load the data depends if you want to use the package <span class="in">`nflfastR`</span> or not. While it has many useful features, you may not want to use it if you already have the data saved that you want to use.</span>
+<span id="cb19-29"><a href="#cb19-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-30"><a href="#cb19-30" aria-hidden="true" tabindex="-1"></a>::: {.panel-tabset}</span>
+<span id="cb19-31"><a href="#cb19-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-32"><a href="#cb19-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Using nflfastR</span></span>
+<span id="cb19-33"><a href="#cb19-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-36"><a href="#cb19-36" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-37"><a href="#cb19-37" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb19-38"><a href="#cb19-38" aria-hidden="true" tabindex="-1"></a>players <span class="ot">&lt;-</span> nflfastR<span class="sc">::</span><span class="fu">load_player_stats</span>(<span class="dv">2021</span>)</span>
+<span id="cb19-39"><a href="#cb19-39" aria-hidden="true" tabindex="-1"></a>rosters <span class="ot">&lt;-</span> nflfastR<span class="sc">::</span><span class="fu">fast_scraper_roster</span>(<span class="dv">2021</span>)</span>
+<span id="cb19-40"><a href="#cb19-40" aria-hidden="true" tabindex="-1"></a>pbp <span class="ot">&lt;-</span> nflfastR<span class="sc">::</span><span class="fu">load_pbp</span>(<span class="dv">2021</span>)</span>
+<span id="cb19-41"><a href="#cb19-41" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-42"><a href="#cb19-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-43"><a href="#cb19-43" aria-hidden="true" tabindex="-1"></a>It is worth noting that you can get multiple seasons at once using this method. E.g. <span class="in">`nflfastR::load_player_stats(2020:2021)`</span>.</span>
+<span id="cb19-44"><a href="#cb19-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-45"><a href="#cb19-45" aria-hidden="true" tabindex="-1"></a><span class="fu">## Without nflfastR</span></span>
+<span id="cb19-46"><a href="#cb19-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-49"><a href="#cb19-49" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-50"><a href="#cb19-50" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb19-51"><a href="#cb19-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-52"><a href="#cb19-52" aria-hidden="true" tabindex="-1"></a><span class="co"># if you have the data saved locally</span></span>
+<span id="cb19-53"><a href="#cb19-53" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">map_df</span>(<span class="fu">c</span>(<span class="dv">2010</span><span class="sc">:</span><span class="dv">2020</span>), <span class="cf">function</span>(x) {</span>
+<span id="cb19-54"><a href="#cb19-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">readRDS</span>(</span>
+<span id="cb19-55"><a href="#cb19-55" aria-hidden="true" tabindex="-1"></a>    glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"~/Documents/nfl/data/pbp/play_by_play_{x}.rds"</span>)</span>
+<span id="cb19-56"><a href="#cb19-56" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb19-57"><a href="#cb19-57" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb19-58"><a href="#cb19-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-59"><a href="#cb19-59" aria-hidden="true" tabindex="-1"></a><span class="co"># if you do not have it saved locally</span></span>
+<span id="cb19-60"><a href="#cb19-60" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> purrr<span class="sc">::</span><span class="fu">map_df</span>(<span class="fu">c</span>(<span class="dv">2010</span><span class="sc">:</span><span class="dv">2020</span>), <span class="cf">function</span>(x) {</span>
+<span id="cb19-61"><a href="#cb19-61" aria-hidden="true" tabindex="-1"></a>  <span class="fu">readRDS</span>(</span>
+<span id="cb19-62"><a href="#cb19-62" aria-hidden="true" tabindex="-1"></a>    glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"https://raw.githubusercontent.com/guga31bb/nflfastR-data/master/data/play_by_play_{x}.rds"</span>)</span>
+<span id="cb19-63"><a href="#cb19-63" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb19-64"><a href="#cb19-64" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb19-65"><a href="#cb19-65" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-66"><a href="#cb19-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-67"><a href="#cb19-67" aria-hidden="true" tabindex="-1"></a>I thought it was worth showing because this was a trick that I found quite useful once I discovered it. I have used it countless times for similar tasks. By using <span class="in">`glue()`</span>, you can map across the values like an f string in Python.</span>
+<span id="cb19-68"><a href="#cb19-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-69"><a href="#cb19-69" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb19-70"><a href="#cb19-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-73"><a href="#cb19-73" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-74"><a href="#cb19-74" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb19-75"><a href="#cb19-75" aria-hidden="true" tabindex="-1"></a>pbp_wr <span class="ot">&lt;-</span> pbp <span class="sc">|&gt;</span></span>
+<span id="cb19-76"><a href="#cb19-76" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb19-77"><a href="#cb19-77" aria-hidden="true" tabindex="-1"></a>    <span class="co"># if they caught the ball in the middle of the field, </span></span>
+<span id="cb19-78"><a href="#cb19-78" aria-hidden="true" tabindex="-1"></a>    <span class="co"># assign 0 otherwise, assign 1 </span></span>
+<span id="cb19-79"><a href="#cb19-79" aria-hidden="true" tabindex="-1"></a>    <span class="at">outside_pass =</span> <span class="fu">ifelse</span>(pass_location <span class="sc">!=</span> <span class="st">"middle"</span>, <span class="dv">1</span>, <span class="dv">0</span>),</span>
+<span id="cb19-80"><a href="#cb19-80" aria-hidden="true" tabindex="-1"></a>    <span class="at">pass_air_yards =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(air_yards), <span class="dv">0</span>, air_yards),</span>
+<span id="cb19-81"><a href="#cb19-81" aria-hidden="true" tabindex="-1"></a>    <span class="at">pass_air_yards =</span> <span class="fu">ifelse</span>(ydstogo <span class="sc">&lt;=</span> <span class="dv">10</span>, pass_air_yards, <span class="cn">NA</span>)</span>
+<span id="cb19-82"><a href="#cb19-82" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb19-83"><a href="#cb19-83" aria-hidden="true" tabindex="-1"></a>  <span class="co"># rec id is a bit of a hack to keep that value</span></span>
+<span id="cb19-84"><a href="#cb19-84" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(receiver_id, fantasy_id) <span class="sc">|&gt;</span></span>
+<span id="cb19-85"><a href="#cb19-85" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb19-86"><a href="#cb19-86" aria-hidden="true" tabindex="-1"></a>    <span class="at">rec =</span> <span class="fu">sum</span>(complete_pass),</span>
+<span id="cb19-87"><a href="#cb19-87" aria-hidden="true" tabindex="-1"></a>    <span class="at">air_yards =</span> <span class="fu">mean</span>(pass_air_yards, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb19-88"><a href="#cb19-88" aria-hidden="true" tabindex="-1"></a>    <span class="at">yards_per_target =</span> <span class="fu">mean</span>(yards_gained, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb19-89"><a href="#cb19-89" aria-hidden="true" tabindex="-1"></a>    <span class="at">yards_after_catch =</span> <span class="fu">mean</span>(yards_after_catch, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb19-90"><a href="#cb19-90" aria-hidden="true" tabindex="-1"></a>    <span class="at">td_rate =</span> <span class="fu">mean</span>(pass_touchdown),</span>
+<span id="cb19-91"><a href="#cb19-91" aria-hidden="true" tabindex="-1"></a>    <span class="at">outside_rec =</span> <span class="fu">mean</span>(outside_pass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb19-92"><a href="#cb19-92" aria-hidden="true" tabindex="-1"></a>    <span class="at">dist_from_sticks =</span> <span class="fu">mean</span>(pass_air_yards <span class="sc">-</span> ydstogo, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb19-93"><a href="#cb19-93" aria-hidden="true" tabindex="-1"></a>    <span class="co"># first down percentage</span></span>
+<span id="cb19-94"><a href="#cb19-94" aria-hidden="true" tabindex="-1"></a>    <span class="at">first_down =</span> <span class="fu">mean</span>(first_down, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb19-95"><a href="#cb19-95" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb19-96"><a href="#cb19-96" aria-hidden="true" tabindex="-1"></a>  <span class="co"># so you don't get random players like a QB</span></span>
+<span id="cb19-97"><a href="#cb19-97" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(rec <span class="sc">&gt;</span> <span class="dv">25</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-98"><a href="#cb19-98" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
+<span id="cb19-99"><a href="#cb19-99" aria-hidden="true" tabindex="-1"></a>    pbp <span class="sc">|&gt;</span></span>
+<span id="cb19-100"><a href="#cb19-100" aria-hidden="true" tabindex="-1"></a>      <span class="fu">count</span>(receiver_id, fantasy_id, receiver, posteam) <span class="sc">|&gt;</span></span>
+<span id="cb19-101"><a href="#cb19-101" aria-hidden="true" tabindex="-1"></a>      <span class="fu">group_by</span>(receiver_id) <span class="sc">|&gt;</span></span>
+<span id="cb19-102"><a href="#cb19-102" aria-hidden="true" tabindex="-1"></a>      <span class="fu">arrange</span>(<span class="sc">-</span>n) <span class="sc">|&gt;</span></span>
+<span id="cb19-103"><a href="#cb19-103" aria-hidden="true" tabindex="-1"></a>      <span class="co"># this will keep the first instance of a player</span></span>
+<span id="cb19-104"><a href="#cb19-104" aria-hidden="true" tabindex="-1"></a>      <span class="co"># this is to add players non-numerical values</span></span>
+<span id="cb19-105"><a href="#cb19-105" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(<span class="at">rn =</span> <span class="fu">row_number</span>()) <span class="sc">|&gt;</span></span>
+<span id="cb19-106"><a href="#cb19-106" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(rn <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-107"><a href="#cb19-107" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(<span class="sc">-</span>n, <span class="sc">-</span>rn)) <span class="sc">|&gt;</span></span>
+<span id="cb19-108"><a href="#cb19-108" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(receiver, <span class="at">.before =</span> rec) <span class="sc">|&gt;</span> </span>
+<span id="cb19-109"><a href="#cb19-109" aria-hidden="true" tabindex="-1"></a>  <span class="co"># this second join is to add the players position</span></span>
+<span id="cb19-110"><a href="#cb19-110" aria-hidden="true" tabindex="-1"></a>  <span class="co"># here we are using the gsid, which is why</span></span>
+<span id="cb19-111"><a href="#cb19-111" aria-hidden="true" tabindex="-1"></a>  <span class="co"># we wanted the fantasy id before</span></span>
+<span id="cb19-112"><a href="#cb19-112" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
+<span id="cb19-113"><a href="#cb19-113" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(rosters, position, gsis_id), <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'fantasy_id'</span> <span class="ot">=</span> <span class="st">'gsis_id'</span>)</span>
+<span id="cb19-114"><a href="#cb19-114" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb19-115"><a href="#cb19-115" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(position <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">'WR'</span>, <span class="st">'TE'</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb19-116"><a href="#cb19-116" aria-hidden="true" tabindex="-1"></a>  <span class="co"># good practice to ungroup at the end</span></span>
+<span id="cb19-117"><a href="#cb19-117" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb19-118"><a href="#cb19-118" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-119"><a href="#cb19-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-120"><a href="#cb19-120" aria-hidden="true" tabindex="-1"></a>If the dataset is large enough, you may get timeout errors, if that is the case, you can seperate the second left_join() into a seperate call, e.g.</span>
+<span id="cb19-121"><a href="#cb19-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-124"><a href="#cb19-124" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-125"><a href="#cb19-125" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb19-126"><a href="#cb19-126" aria-hidden="true" tabindex="-1"></a><span class="co">#| code-fold: true</span></span>
+<span id="cb19-127"><a href="#cb19-127" aria-hidden="true" tabindex="-1"></a><span class="co">#| code-summary: "Show the code"</span></span>
+<span id="cb19-128"><a href="#cb19-128" aria-hidden="true" tabindex="-1"></a>pbp_wr <span class="ot">&lt;-</span> pbp <span class="sc">|&gt;</span></span>
+<span id="cb19-129"><a href="#cb19-129" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb19-130"><a href="#cb19-130" aria-hidden="true" tabindex="-1"></a>    <span class="at">outside_pass =</span> <span class="fu">ifelse</span>(pass_location <span class="sc">!=</span> <span class="st">"middle"</span>, <span class="dv">1</span>, <span class="dv">0</span>),</span>
+<span id="cb19-131"><a href="#cb19-131" aria-hidden="true" tabindex="-1"></a>    <span class="at">pass_air_yards =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(air_yards), <span class="dv">0</span>, air_yards),</span>
+<span id="cb19-132"><a href="#cb19-132" aria-hidden="true" tabindex="-1"></a>    <span class="at">pass_air_yards =</span> <span class="fu">ifelse</span>(ydstogo <span class="sc">&lt;=</span> <span class="dv">10</span>, pass_air_yards, <span class="cn">NA</span>)</span>
+<span id="cb19-133"><a href="#cb19-133" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb19-134"><a href="#cb19-134" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(receiver_id, fantasy_id) <span class="sc">|&gt;</span></span>
+<span id="cb19-135"><a href="#cb19-135" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb19-136"><a href="#cb19-136" aria-hidden="true" tabindex="-1"></a>    <span class="at">rec =</span> <span class="fu">sum</span>(complete_pass),</span>
+<span id="cb19-137"><a href="#cb19-137" aria-hidden="true" tabindex="-1"></a>    <span class="at">air_yards =</span> <span class="fu">mean</span>(pass_air_yards, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb19-138"><a href="#cb19-138" aria-hidden="true" tabindex="-1"></a>    <span class="at">yards_per_target =</span> <span class="fu">mean</span>(yards_gained, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb19-139"><a href="#cb19-139" aria-hidden="true" tabindex="-1"></a>    <span class="at">yards_after_catch =</span> <span class="fu">mean</span>(yards_after_catch, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb19-140"><a href="#cb19-140" aria-hidden="true" tabindex="-1"></a>    <span class="at">td_rate =</span> <span class="fu">mean</span>(pass_touchdown),</span>
+<span id="cb19-141"><a href="#cb19-141" aria-hidden="true" tabindex="-1"></a>    <span class="at">outside_rec =</span> <span class="fu">mean</span>(outside_pass, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb19-142"><a href="#cb19-142" aria-hidden="true" tabindex="-1"></a>    <span class="at">dist_from_sticks =</span> <span class="fu">mean</span>(pass_air_yards <span class="sc">-</span> ydstogo, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb19-143"><a href="#cb19-143" aria-hidden="true" tabindex="-1"></a>    <span class="at">first_down =</span> <span class="fu">mean</span>(first_down, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb19-144"><a href="#cb19-144" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb19-145"><a href="#cb19-145" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(rec <span class="sc">&gt;</span> <span class="dv">25</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-146"><a href="#cb19-146" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
+<span id="cb19-147"><a href="#cb19-147" aria-hidden="true" tabindex="-1"></a>    pbp <span class="sc">|&gt;</span></span>
+<span id="cb19-148"><a href="#cb19-148" aria-hidden="true" tabindex="-1"></a>      <span class="fu">count</span>(receiver_id, fantasy_id, receiver, posteam) <span class="sc">|&gt;</span></span>
+<span id="cb19-149"><a href="#cb19-149" aria-hidden="true" tabindex="-1"></a>      <span class="fu">group_by</span>(receiver_id) <span class="sc">|&gt;</span></span>
+<span id="cb19-150"><a href="#cb19-150" aria-hidden="true" tabindex="-1"></a>      <span class="fu">arrange</span>(<span class="sc">-</span>n) <span class="sc">|&gt;</span></span>
+<span id="cb19-151"><a href="#cb19-151" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(<span class="at">rn =</span> <span class="fu">row_number</span>()) <span class="sc">|&gt;</span></span>
+<span id="cb19-152"><a href="#cb19-152" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(rn <span class="sc">==</span> <span class="dv">1</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-153"><a href="#cb19-153" aria-hidden="true" tabindex="-1"></a>      <span class="fu">select</span>(<span class="sc">-</span>n, <span class="sc">-</span>rn)) <span class="sc">|&gt;</span></span>
+<span id="cb19-154"><a href="#cb19-154" aria-hidden="true" tabindex="-1"></a>  <span class="fu">relocate</span>(receiver, <span class="at">.before =</span> rec) </span>
+<span id="cb19-155"><a href="#cb19-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-156"><a href="#cb19-156" aria-hidden="true" tabindex="-1"></a>pbp_wr <span class="ot">&lt;-</span> pbp_wr <span class="sc">|&gt;</span> </span>
+<span id="cb19-157"><a href="#cb19-157" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(</span>
+<span id="cb19-158"><a href="#cb19-158" aria-hidden="true" tabindex="-1"></a>    <span class="fu">select</span>(rosters, position, gsis_id), <span class="at">by =</span> <span class="fu">c</span>(<span class="st">'fantasy_id'</span> <span class="ot">=</span> <span class="st">'gsis_id'</span>)</span>
+<span id="cb19-159"><a href="#cb19-159" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">|&gt;</span></span>
+<span id="cb19-160"><a href="#cb19-160" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(position <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">'WR'</span>, <span class="st">'TE'</span>)) <span class="sc">|&gt;</span></span>
+<span id="cb19-161"><a href="#cb19-161" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>()</span>
+<span id="cb19-162"><a href="#cb19-162" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-163"><a href="#cb19-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-166"><a href="#cb19-166" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-167"><a href="#cb19-167" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb19-168"><a href="#cb19-168" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb19-169"><a href="#cb19-169" aria-hidden="true" tabindex="-1"></a>wr_stats <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">'wr_stats_2021.csv'</span>)</span>
+<span id="cb19-170"><a href="#cb19-170" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-171"><a href="#cb19-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-172"><a href="#cb19-172" aria-hidden="true" tabindex="-1"></a>This is the resulting dataframe. To run a PCA we only want the numeric columns, however, we will be using the character columns for visualising at a later step.</span>
+<span id="cb19-173"><a href="#cb19-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-176"><a href="#cb19-176" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-177"><a href="#cb19-177" aria-hidden="true" tabindex="-1"></a><span class="co">#| column: screen</span></span>
+<span id="cb19-178"><a href="#cb19-178" aria-hidden="true" tabindex="-1"></a>wr_stats <span class="sc">|&gt;</span></span>
+<span id="cb19-179"><a href="#cb19-179" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
+<span id="cb19-180"><a href="#cb19-180" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_options</span>(<span class="at">container.height =</span> <span class="st">'300px'</span>)</span>
+<span id="cb19-181"><a href="#cb19-181" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-182"><a href="#cb19-182" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-185"><a href="#cb19-185" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-186"><a href="#cb19-186" aria-hidden="true" tabindex="-1"></a>pca_fit <span class="ot">&lt;-</span> wr_stats <span class="sc">|&gt;</span></span>
+<span id="cb19-187"><a href="#cb19-187" aria-hidden="true" tabindex="-1"></a>  <span class="co"># only keep numerical columns</span></span>
+<span id="cb19-188"><a href="#cb19-188" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="fu">where</span>(is.numeric)) <span class="sc">|&gt;</span> </span>
+<span id="cb19-189"><a href="#cb19-189" aria-hidden="true" tabindex="-1"></a>  <span class="co"># scale data, prcomp(scale = TRUE) also works</span></span>
+<span id="cb19-190"><a href="#cb19-190" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb19-191"><a href="#cb19-191" aria-hidden="true" tabindex="-1"></a>  <span class="co"># PCA</span></span>
+<span id="cb19-192"><a href="#cb19-192" aria-hidden="true" tabindex="-1"></a>  <span class="fu">prcomp</span>() </span>
+<span id="cb19-193"><a href="#cb19-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-194"><a href="#cb19-194" aria-hidden="true" tabindex="-1"></a>pca_fit</span>
+<span id="cb19-195"><a href="#cb19-195" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-196"><a href="#cb19-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-197"><a href="#cb19-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-200"><a href="#cb19-200" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-201"><a href="#cb19-201" aria-hidden="true" tabindex="-1"></a><span class="co">#| column: page</span></span>
+<span id="cb19-202"><a href="#cb19-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-203"><a href="#cb19-203" aria-hidden="true" tabindex="-1"></a><span class="co"># helper for the axis labels</span></span>
+<span id="cb19-204"><a href="#cb19-204" aria-hidden="true" tabindex="-1"></a>importance <span class="ot">&lt;-</span> pca_fit <span class="sc">|&gt;</span> </span>
+<span id="cb19-205"><a href="#cb19-205" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>(<span class="at">matrix =</span> <span class="st">"eigenvalues"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb19-206"><a href="#cb19-206" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(PC <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb19-207"><a href="#cb19-207" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pull</span>(percent) <span class="sc">|&gt;</span> </span>
+<span id="cb19-208"><a href="#cb19-208" aria-hidden="true" tabindex="-1"></a>  <span class="fu">round</span>(<span class="dv">3</span>)</span>
+<span id="cb19-209"><a href="#cb19-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-210"><a href="#cb19-210" aria-hidden="true" tabindex="-1"></a>pca_fit <span class="sc">|&gt;</span></span>
+<span id="cb19-211"><a href="#cb19-211" aria-hidden="true" tabindex="-1"></a>  <span class="co"># add original dataset back in</span></span>
+<span id="cb19-212"><a href="#cb19-212" aria-hidden="true" tabindex="-1"></a>  <span class="fu">augment</span>(wr_stats) <span class="sc">|&gt;</span> </span>
+<span id="cb19-213"><a href="#cb19-213" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(</span>
+<span id="cb19-214"><a href="#cb19-214" aria-hidden="true" tabindex="-1"></a>    .fittedPC1, </span>
+<span id="cb19-215"><a href="#cb19-215" aria-hidden="true" tabindex="-1"></a>    .fittedPC2, </span>
+<span id="cb19-216"><a href="#cb19-216" aria-hidden="true" tabindex="-1"></a>    <span class="at">colour =</span> position)) <span class="sc">+</span> </span>
+<span id="cb19-217"><a href="#cb19-217" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="fl">1.5</span>) <span class="sc">+</span></span>
+<span id="cb19-218"><a href="#cb19-218" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb19-219"><a href="#cb19-219" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="fu">paste0</span>(<span class="st">'PC1 (Accounts for '</span>, importance[[<span class="dv">1</span>]]<span class="sc">*</span><span class="dv">100</span>, <span class="st">'% of Variance)'</span>), </span>
+<span id="cb19-220"><a href="#cb19-220" aria-hidden="true" tabindex="-1"></a>    <span class="at">y =</span> <span class="fu">paste0</span>(<span class="st">'PC2 (Accounts for '</span>, importance[[<span class="dv">2</span>]]<span class="sc">*</span><span class="dv">100</span>, <span class="st">'% of Variance)'</span>) </span>
+<span id="cb19-221"><a href="#cb19-221" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">+</span></span>
+<span id="cb19-222"><a href="#cb19-222" aria-hidden="true" tabindex="-1"></a>  becausejustynfun<span class="sc">::</span><span class="fu">white_theme</span>()</span>
+<span id="cb19-223"><a href="#cb19-223" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-224"><a href="#cb19-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-225"><a href="#cb19-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-228"><a href="#cb19-228" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-229"><a href="#cb19-229" aria-hidden="true" tabindex="-1"></a><span class="co">#| column: page</span></span>
+<span id="cb19-230"><a href="#cb19-230" aria-hidden="true" tabindex="-1"></a>pca_fit <span class="sc">|&gt;</span></span>
+<span id="cb19-231"><a href="#cb19-231" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>(<span class="at">matrix =</span> <span class="st">"rotation"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-232"><a href="#cb19-232" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(</span>
+<span id="cb19-233"><a href="#cb19-233" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_from =</span> <span class="st">"PC"</span>, </span>
+<span id="cb19-234"><a href="#cb19-234" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_prefix =</span> <span class="st">"PC"</span>, </span>
+<span id="cb19-235"><a href="#cb19-235" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_from =</span> <span class="st">"value"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-236"><a href="#cb19-236" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
+<span id="cb19-237"><a href="#cb19-237" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_options</span>(<span class="at">container.height =</span> <span class="st">'500px'</span>)</span>
+<span id="cb19-238"><a href="#cb19-238" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-239"><a href="#cb19-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-242"><a href="#cb19-242" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-243"><a href="#cb19-243" aria-hidden="true" tabindex="-1"></a><span class="co"># define arrow style for plotting</span></span>
+<span id="cb19-244"><a href="#cb19-244" aria-hidden="true" tabindex="-1"></a>arrow_style <span class="ot">&lt;-</span> <span class="fu">arrow</span>(</span>
+<span id="cb19-245"><a href="#cb19-245" aria-hidden="true" tabindex="-1"></a>  <span class="at">angle =</span> <span class="dv">20</span>, </span>
+<span id="cb19-246"><a href="#cb19-246" aria-hidden="true" tabindex="-1"></a>  <span class="at">ends =</span> <span class="st">"first"</span>, </span>
+<span id="cb19-247"><a href="#cb19-247" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"closed"</span>, </span>
+<span id="cb19-248"><a href="#cb19-248" aria-hidden="true" tabindex="-1"></a>  <span class="at">length =</span> grid<span class="sc">::</span><span class="fu">unit</span>(<span class="dv">8</span>, <span class="st">"pt"</span>)</span>
+<span id="cb19-249"><a href="#cb19-249" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb19-250"><a href="#cb19-250" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-251"><a href="#cb19-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-254"><a href="#cb19-254" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-255"><a href="#cb19-255" aria-hidden="true" tabindex="-1"></a><span class="co"># plot rotation matrix</span></span>
+<span id="cb19-256"><a href="#cb19-256" aria-hidden="true" tabindex="-1"></a>pca_fit <span class="sc">|&gt;</span></span>
+<span id="cb19-257"><a href="#cb19-257" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>(<span class="at">matrix =</span> <span class="st">"rotation"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-258"><a href="#cb19-258" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_wider</span>(</span>
+<span id="cb19-259"><a href="#cb19-259" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_from =</span> <span class="st">"PC"</span>, </span>
+<span id="cb19-260"><a href="#cb19-260" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_prefix =</span> <span class="st">"PC"</span>, </span>
+<span id="cb19-261"><a href="#cb19-261" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_from =</span> <span class="st">"value"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-262"><a href="#cb19-262" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(PC1, PC2)) <span class="sc">+</span></span>
+<span id="cb19-263"><a href="#cb19-263" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">palette =</span> <span class="st">"Accent"</span>, <span class="at">direction =</span> <span class="dv">1</span>) <span class="sc">+</span> </span>
+<span id="cb19-264"><a href="#cb19-264" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_segment</span>(</span>
+<span id="cb19-265"><a href="#cb19-265" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">colour =</span> column),</span>
+<span id="cb19-266"><a href="#cb19-266" aria-hidden="true" tabindex="-1"></a>    <span class="at">xend =</span> <span class="dv">0</span>, </span>
+<span id="cb19-267"><a href="#cb19-267" aria-hidden="true" tabindex="-1"></a>    <span class="at">yend =</span> <span class="dv">0</span>, </span>
+<span id="cb19-268"><a href="#cb19-268" aria-hidden="true" tabindex="-1"></a>    <span class="at">arrow =</span> arrow_style) <span class="sc">+</span></span>
+<span id="cb19-269"><a href="#cb19-269" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text_repel</span>( </span>
+<span id="cb19-270"><a href="#cb19-270" aria-hidden="true" tabindex="-1"></a>    <span class="fu">aes</span>(<span class="at">label =</span> column, <span class="at">colour =</span> column),</span>
+<span id="cb19-271"><a href="#cb19-271" aria-hidden="true" tabindex="-1"></a>    <span class="at">hjust =</span> <span class="dv">1</span>, </span>
+<span id="cb19-272"><a href="#cb19-272" aria-hidden="true" tabindex="-1"></a>    <span class="at">nudge_x =</span> <span class="sc">-</span><span class="fl">0.02</span></span>
+<span id="cb19-273"><a href="#cb19-273" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb19-274"><a href="#cb19-274" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>)) <span class="sc">+</span> </span>
+<span id="cb19-275"><a href="#cb19-275" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">limits =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">1</span>)) <span class="sc">+</span></span>
+<span id="cb19-276"><a href="#cb19-276" aria-hidden="true" tabindex="-1"></a>  becausejustynfun<span class="sc">::</span><span class="fu">theme_dark_blue</span>() <span class="sc">+</span> </span>
+<span id="cb19-277"><a href="#cb19-277" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span>
+<span id="cb19-278"><a href="#cb19-278" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-279"><a href="#cb19-279" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-280"><a href="#cb19-280" aria-hidden="true" tabindex="-1"></a>I used a dark theme for this plot because of the different colours used for the components. </span>
+<span id="cb19-281"><a href="#cb19-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-284"><a href="#cb19-284" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-285"><a href="#cb19-285" aria-hidden="true" tabindex="-1"></a>pca_fit <span class="sc">|&gt;</span></span>
+<span id="cb19-286"><a href="#cb19-286" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>(<span class="at">matrix =</span> <span class="st">"eigenvalues"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-287"><a href="#cb19-287" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
+<span id="cb19-288"><a href="#cb19-288" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tab_options</span>(<span class="at">container.height =</span> <span class="st">'500px'</span>)</span>
+<span id="cb19-289"><a href="#cb19-289" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-290"><a href="#cb19-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-293"><a href="#cb19-293" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-294"><a href="#cb19-294" aria-hidden="true" tabindex="-1"></a>pca_fit <span class="sc">|&gt;</span></span>
+<span id="cb19-295"><a href="#cb19-295" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tidy</span>(<span class="at">matrix =</span> <span class="st">"eigenvalues"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb19-296"><a href="#cb19-296" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(PC, percent)) <span class="sc">+</span></span>
+<span id="cb19-297"><a href="#cb19-297" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="st">"#56B4E9"</span>, <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb19-298"><a href="#cb19-298" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">8</span>) <span class="sc">+</span></span>
+<span id="cb19-299"><a href="#cb19-299" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(</span>
+<span id="cb19-300"><a href="#cb19-300" aria-hidden="true" tabindex="-1"></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="fl">0.40</span>, <span class="fl">0.05</span>),</span>
+<span id="cb19-301"><a href="#cb19-301" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> scales<span class="sc">::</span><span class="fu">percent_format</span>(), </span>
+<span id="cb19-302"><a href="#cb19-302" aria-hidden="true" tabindex="-1"></a>    <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fl">0.01</span>))</span>
+<span id="cb19-303"><a href="#cb19-303" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb19-304"><a href="#cb19-304" aria-hidden="true" tabindex="-1"></a>  becausejustynfun<span class="sc">::</span><span class="fu">white_theme</span>()</span>
+<span id="cb19-305"><a href="#cb19-305" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-306"><a href="#cb19-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-307"><a href="#cb19-307" aria-hidden="true" tabindex="-1"></a><span class="fu">### Update</span></span>
+<span id="cb19-308"><a href="#cb19-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-309"><a href="#cb19-309" aria-hidden="true" tabindex="-1"></a>I thought it might be fun to add an example of a 3D plot of the components. For this I will use <span class="in">`plotly`</span>. It is one of the more interactive friendly visualisation tools, and from my experience the code is very similar from Python to R. If you are not too familiar with Python, writing this code may feel awkward. However, I think it is quite useful to get familiar with it because I can easily use plotly in Python without having to change much at all.</span>
+<span id="cb19-310"><a href="#cb19-310" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-313"><a href="#cb19-313" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-314"><a href="#cb19-314" aria-hidden="true" tabindex="-1"></a><span class="co">#| warning: false</span></span>
+<span id="cb19-315"><a href="#cb19-315" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-316"><a href="#cb19-316" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(plotly)</span>
+<span id="cb19-317"><a href="#cb19-317" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-318"><a href="#cb19-318" aria-hidden="true" tabindex="-1"></a><span class="co"># making a seperate df will simplify plotly creation</span></span>
+<span id="cb19-319"><a href="#cb19-319" aria-hidden="true" tabindex="-1"></a>pca_df <span class="ot">&lt;-</span> pca_fit <span class="sc">|&gt;</span></span>
+<span id="cb19-320"><a href="#cb19-320" aria-hidden="true" tabindex="-1"></a>  <span class="fu">augment</span>(wr_stats)</span>
+<span id="cb19-321"><a href="#cb19-321" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-322"><a href="#cb19-322" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> <span class="fu">plot_ly</span>(</span>
+<span id="cb19-323"><a href="#cb19-323" aria-hidden="true" tabindex="-1"></a>  pca_df, </span>
+<span id="cb19-324"><a href="#cb19-324" aria-hidden="true" tabindex="-1"></a>  <span class="at">x =</span> <span class="sc">~</span>.fittedPC1, </span>
+<span id="cb19-325"><a href="#cb19-325" aria-hidden="true" tabindex="-1"></a>  <span class="at">y =</span> <span class="sc">~</span>.fittedPC2, </span>
+<span id="cb19-326"><a href="#cb19-326" aria-hidden="true" tabindex="-1"></a>  <span class="at">z =</span> <span class="sc">~</span>.fittedPC3, </span>
+<span id="cb19-327"><a href="#cb19-327" aria-hidden="true" tabindex="-1"></a>  <span class="at">color =</span> <span class="sc">~</span>position, </span>
+<span id="cb19-328"><a href="#cb19-328" aria-hidden="true" tabindex="-1"></a>  <span class="at">colors =</span> <span class="fu">c</span>(<span class="st">'#386cb0'</span>, <span class="st">'#beaed4'</span>), </span>
+<span id="cb19-329"><a href="#cb19-329" aria-hidden="true" tabindex="-1"></a>  <span class="at">text =</span> <span class="sc">~</span>receiver)</span>
+<span id="cb19-330"><a href="#cb19-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-331"><a href="#cb19-331" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> fig <span class="sc">|&gt;</span> </span>
+<span id="cb19-332"><a href="#cb19-332" aria-hidden="true" tabindex="-1"></a>  <span class="fu">add_markers</span>()</span>
+<span id="cb19-333"><a href="#cb19-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-334"><a href="#cb19-334" aria-hidden="true" tabindex="-1"></a>fig <span class="ot">&lt;-</span> fig <span class="sc">|&gt;</span> </span>
+<span id="cb19-335"><a href="#cb19-335" aria-hidden="true" tabindex="-1"></a>  <span class="fu">layout</span>(<span class="at">scene =</span> <span class="fu">list</span>(</span>
+<span id="cb19-336"><a href="#cb19-336" aria-hidden="true" tabindex="-1"></a>    <span class="at">xaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'PC1'</span>),</span>
+<span id="cb19-337"><a href="#cb19-337" aria-hidden="true" tabindex="-1"></a>    <span class="at">yaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'PC2'</span>),</span>
+<span id="cb19-338"><a href="#cb19-338" aria-hidden="true" tabindex="-1"></a>    <span class="at">zaxis =</span> <span class="fu">list</span>(<span class="at">title =</span> <span class="st">'PC3'</span>)</span>
+<span id="cb19-339"><a href="#cb19-339" aria-hidden="true" tabindex="-1"></a>    ))</span>
+<span id="cb19-340"><a href="#cb19-340" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-341"><a href="#cb19-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-344"><a href="#cb19-344" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-345"><a href="#cb19-345" aria-hidden="true" tabindex="-1"></a><span class="co">#| column: page</span></span>
+<span id="cb19-346"><a href="#cb19-346" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-347"><a href="#cb19-347" aria-hidden="true" tabindex="-1"></a>fig</span>
+<span id="cb19-348"><a href="#cb19-348" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-349"><a href="#cb19-349" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-350"><a href="#cb19-350" aria-hidden="true" tabindex="-1"></a>That is all for now. I have a few more similar posts saved in my draft, so they should be on here soon (within the next six months).</span>
+<span id="cb19-351"><a href="#cb19-351" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-352"><a href="#cb19-352" aria-hidden="true" tabindex="-1"></a>:::{.callout-caution collapse="true"}</span>
+<span id="cb19-353"><a href="#cb19-353" aria-hidden="true" tabindex="-1"></a><span class="fu">## Session Info</span></span>
+<span id="cb19-354"><a href="#cb19-354" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-357"><a href="#cb19-357" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb19-358"><a href="#cb19-358" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span>
+<span id="cb19-359"><a href="#cb19-359" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb19-360"><a href="#cb19-360" aria-hidden="true" tabindex="-1"></a>:::</span>
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

@@ -2,6 +2,12 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/nfl-elo-i/elo_adjustments.html",
+      "/posts/nfl-elo-i/elo_notes.html",
+      "/posts/nfl-elo-i/elo_autocorr.html",
+      "/posts/nfl-elo-i/college_elo_python.html",
+      "/posts/nfl-elo-i/elo_vs_spread.html",
+      "/posts/nfl-elo-i/index.html",
       "/posts/pca-nfl-wr/index.html",
       "/posts/post-with-code/index.html",
       "/posts/gambling/index.html",

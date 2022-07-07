@@ -276,6 +276,45 @@ pca_fit |>
   becausejustynfun::white_theme()
 ```
 
+### Update
+
+I thought it might be fun to add an example of a 3D plot of the components. For this I will use `plotly`. It is one of the more interactive friendly visualisation tools, and from my experience the code is very similar from Python to R. If you are not too familiar with Python, writing this code may feel awkward. However, I think it is quite useful to get familiar with it because I can easily use plotly in Python without having to change much at all.
+
+```{r}
+#| warning: false
+
+library(plotly)
+
+# making a seperate df will simplify plotly creation
+pca_df <- pca_fit |>
+  augment(wr_stats)
+
+fig <- plot_ly(
+  pca_df, 
+  x = ~.fittedPC1, 
+  y = ~.fittedPC2, 
+  z = ~.fittedPC3, 
+  color = ~position, 
+  colors = c('#386cb0', '#beaed4'), 
+  text = ~receiver)
+
+fig <- fig |> 
+  add_markers()
+
+fig <- fig |> 
+  layout(scene = list(
+    xaxis = list(title = 'PC1'),
+    yaxis = list(title = 'PC2'),
+    zaxis = list(title = 'PC3')
+    ))
+```
+
+```{r}
+#| column: page
+
+fig
+```
+
 That is all for now. I have a few more similar posts saved in my draft, so they should be on here soon (within the next six months).
 
 :::{.callout-caution collapse="true"}
